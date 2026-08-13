@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/color_indicator" android:left="3.0dip" android:top="3.0dip" android:right="3.0dip" android:bottom="3.0dip">
+        <shape android:shape="oval">
+            <solid android:color="@color/off_black" />
+        </shape>
+    </item>
+    <item>
+        <bitmap android:src="@null" />
+    </item>
+</layer-list>

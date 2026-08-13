@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="68.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/pspdf__item_menu_layer" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <FrameLayout android:background="?android:colorBackground" android:layout_width="68.0dip" android:layout_height="fill_parent">
+            <ImageView android:id="@id/pspdf__button_edit_scale" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/pspdf__ic_edit" android:scaleType="center" android:contentDescription="@null" app:tint="?android:colorForeground" />
+        </FrameLayout>
+        <FrameLayout android:background="@color/pspdf__errorContainerLight" android:layout_width="68.0dip" android:layout_height="fill_parent">
+            <ImageView android:id="@id/pspdf__button_delete_scale" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/pspdf__ic_delete" android:scaleType="center" android:contentDescription="@null" app:tint="@color/pspdf__onErrorContainerLight" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/pspdf__item_data_layer" android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" android:paddingStart="16.0dip">
+                <TextView android:textSize="14.0sp" android:id="@id/pspdf__scale_name" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="14.0sp" android:id="@id/pspdf__scale_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.5" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="68.0dip" android:layout_height="fill_parent">
+                <ImageView android:id="@id/pspdf__selection_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/pspdf__ic_check" android:scaleType="center" android:contentDescription="@null" app:tint="?colorPrimary" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

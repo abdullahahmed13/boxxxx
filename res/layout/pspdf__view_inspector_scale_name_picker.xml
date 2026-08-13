@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/pspdf__inspector_padding" android:paddingEnd="@dimen/pspdf__inspector_padding" android:paddingVertical="@dimen/pspdf__inspector_vertical_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.pspdfkit.ui.LocalizedTextView android:textSize="@dimen/pspdf__inspector_text_size" android:gravity="center_vertical" android:id="@id/pspdf__label" android:paddingTop="@dimen/pspdf__inspector_vertical_padding" android:paddingBottom="@dimen/pspdf__inspector_vertical_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="60.0dip" android:text="@string/pspdf__name" />
+    <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.pspdfkit.ui.editor.ScreenAdjustingEditText android:textSize="@dimen/pspdf__inspector_text_size" android:textColor="@color/pspdf__outlineLight" android:gravity="end" android:id="@id/pspdf__value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="111.0dip" android:maxLines="1" android:lines="1" android:singleLine="true" android:selectAllOnFocus="true" android:maxLength="40" android:inputType="textNoSuggestions" />
+</LinearLayout>

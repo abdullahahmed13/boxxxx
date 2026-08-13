@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?contentBackground" android:paddingTop="@dimen/dialog_padding" android:paddingBottom="@dimen/dialog_space_between_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/dialog_min_width" android:paddingStart="@dimen/dialog_padding" android:paddingEnd="@dimen/dialog_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Box.Medium.20sp.Content" android:gravity="left|center" android:id="@id/pincodeInstruction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/Enter_pass_code" />
+    <TextView android:textAppearance="@style/TextAppearance.Box.Normal.14sp.ContentSecondary" android:gravity="left|center" android:id="@id/pincodeMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dialog_space_between_content" />
+    <EditText android:textAppearance="@style/TextAppearance.Box.Normal.34sp.Content" android:textSize="30.0sp" android:gravity="center" android:id="@id/pincodeBox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dialog_space_between_content" android:singleLine="true" android:includeFontPadding="true" android:maxLength="10" android:inputType="numberPassword" android:imeOptions="actionDone" />
+    <com.box.android.base.presentation.views.OKCancelView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dialog_button_margin_top" />
+</LinearLayout>

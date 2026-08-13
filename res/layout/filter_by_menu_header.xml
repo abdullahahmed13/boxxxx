@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="center_vertical" android:paddingLeft="@dimen/bottom_sheet_left_padding" android:paddingRight="@dimen/bottom_sheet_left_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/Filter_By" style="@style/TextAppearance.Box.Normal.12sp.ContentSecondary"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

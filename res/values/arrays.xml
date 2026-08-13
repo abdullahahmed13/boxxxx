@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Copied_item_and_n_other_items">
+        <item>Copied \"%1$s\"</item>
+        <item>Copied \"%1$s\" and 1 other</item>
+        <item>Copied \"%1$s\" and %2$d others</item>
+    </string-array>
+    <string-array name="Copying_item_and_n_other_items">
+        <item>Copying \"%1$s\"</item>
+        <item>Copying \"%1$s\" and 1 other</item>
+        <item>Copying \"%1$s\" and %2$d others</item>
+    </string-array>
+    <string-array name="Deleted_item_and_n_other_items">
+        <item>Deleted \"%1$s\"</item>
+        <item>Deleted \"%1$s\" and 1 other</item>
+        <item>Deleted \"%1$s\" and %2$d others</item>
+    </string-array>
+    <string-array name="Deleting_item_and_n_other_items">
+        <item>Deleting \"%1$s\"</item>
+        <item>Deleting \"%1$s\" and 1 other</item>
+        <item>Deleting \"%1$s\" and %2$d others</item>
+    </string-array>
+    <string-array name="Downloaded_item_and_n_other_items">
+        <item>Downloaded \"%1$s\"</item>
+        <item>Downloaded \"%1$s\" and 1 other</item>
+        <item>Downloaded \"%1$s\" and %2$d others</item>
+    </string-array>
+    <string-array name="Downloading_item_and_n_other_items">
+        <item>Downloading \"%1$s\"</item>
+        <item>Downloading \"%1$s\" and 1 other</item>
+        <item>Downloading \"%1$s\" and %2$d others</item>
+    </string-array>
+    <string-array name="Moved_item_and_n_other_items">
+        <item>Moved \"%1$s\"</item>
+        <item>Moved \"%1$s\" and 1 other</item>
+        <item>Moved \"%1$s\" and %2$d others</item>
+    </string-array>
+    <string-array name="Moving_item_and_n_other_items">
+        <item>Moving \"%1$s\"</item>
+        <item>Moving \"%1$s\" and 1 other</item>
+        <item>Moving \"%1$s\" and %2$d others</item>
+    </string-array>
+    <string-array name="N_errors">
+        <item></item>
+        <item>1 error</item>
+        <item>%1$d errors</item>
+    </string-array>
+    <string-array name="N_items_failed_to_be_removed_from_offline">
+        <item></item>
+        <item>1 item failed to be removed from offline</item>
+        <item>%1$d items failed to be removed from offline</item>
+    </string-array>
+    <string-array name="N_items_failed_to_copy">
+        <item></item>
+        <item>1 item failed to copy</item>
+        <item>%1$d items failed to copy</item>
+    </string-array>
+    <string-array name="N_items_failed_to_delete">
+        <item></item>
+        <item>1 item failed to delete</item>
+        <item>%1$d items failed to delete</item>
+    </string-array>
+    <string-array name="N_items_failed_to_download">
+        <item></item>
+        <item>1 item failed to download</item>
+        <item>%1$d items failed to download</item>
+    </string-array>
+    <string-array name="N_items_failed_to_move">
+        <item></item>
+        <item>1 item failed to move</item>
+        <item>%1$d items failed to move</item>
+    </string-array>
+    <string-array name="N_items_failed_to_save_for_offline">
+        <item></item>
+        <item>1 item failed to save for offline</item>
+        <item>%1$d items failed to save for offline</item>
+    </string-array>
+    <string-array name="N_items_failed_to_upload">
+        <item></item>
+        <item>1 item failed to upload</item>
+        <item>%1$d items failed to upload</item>
+    </string-array>
+    <string-array name="N_items_upload_retrying">
+        <item></item>
+        <item>Upload interrupted for 1 item…will retry</item>
+        <item>Upload interrupted for %1$d item…will retry</item>
+    </string-array>
+    <string-array name="Removed_item_and_n_other_items_from_offline">
+        <item>Removed \"%1$s\" from offline</item>
+        <item>Removed \"%1$s\" and 1 other from offline</item>
+        <item>Removed \"%1$s\" and %2$d others from offline</item>
+    </string-array>
+    <string-array name="Removing_item_and_n_other_items_from_offline">
+        <item>Removed \"%1$s\" from offline</item>
+        <item>Removed \"%1$s\" and 1 other from offline</item>
+        <item>Removed \"%1$s\" and %2$d others from offline</item>
+    </string-array>
+    <string-array name="Rename_x_files">
+        <item>Rename 0 files</item>
+        <item>Rename file</item>
+        <item>Rename files</item>
+    </string-array>
+    <string-array name="Saved_item_and_n_other_items_for_offline">
+        <item>Saved \"%1$s\" for offline</item>
+        <item>Saved \"%1$s\" and 1 other for offline</item>
+        <item>Saved \"%1$s\" and %2$d others for offline</item>
+    </string-array>
+    <string-array name="Saving_item_and_n_other_items_for_offline">
+        <item>Saving \"%1$s\" for offline</item>
+        <item>Saving \"%1$s\" and 1 other for offline</item>
+        <item>Saving \"%1$s\" and %2$d others for offline</item>
+    </string-array>
+    <string-array name="There_are_x_files9">
+        <item></item>
+        <item>Invalid characters in filename</item>
+        <item>Invalid characters in filenames</item>
+    </string-array>
+    <string-array name="Upload_n_files_to">
+        <item>Upload file to</item>
+        <item>Upload %1$d file to</item>
+        <item>Upload %1$d files to</item>
+    </string-array>
+    <string-array name="Uploaded_item_and_n_other_items">
+        <item>Uploaded \"%1$s\"</item>
+        <item>Uploaded \"%1$s\" and 1 other</item>
+        <item>Uploaded \"%1$s\" and %2$d others</item>
+    </string-array>
+    <string-array name="Uploaded_item_to_folder">
+        <item></item>
+        <item>You have successfully uploaded one new item to %2$s.</item>
+        <item>You have successfully uploaded %1$d new items to %2$s.</item>
+    </string-array>
+    <string-array name="Uploading_item_and_n_other_items">
+        <item>Uploading \"%1$s\"</item>
+        <item>Uploading \"%1$s\" and 1 other</item>
+        <item>Uploading \"%1$s\" and %2$d others</item>
+    </string-array>
+    <string-array name="additional_trusted_origins">
+        <item>https://app.box.com</item>
+        <item>https://account.box.com</item>
+    </string-array>
+    <string-array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="box_ai_suggested_questions_document">
+        <item>Summarize this document</item>
+        <item>What are the key takeaways?</item>
+        <item>How can this document be improved?</item>
+        <item>Are there any next steps defined?</item>
+    </string-array>
+    <string-array name="box_ai_suggested_questions_image">
+        <item>Describe this image</item>
+        <item>What stands out in this image?</item>
+    </string-array>
+    <string-array name="box_ai_suggested_questions_multidoc">
+        <item>Summarize these files</item>
+        <item>What are the key takeaways?</item>
+    </string-array>
+    <array name="crypto_fingerprint_fallback_prefixes" />
+    <string-array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </string-array>
+    <string-array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="emm_entries_array">
+        <item>Generic EMM</item>
+        <item>Airwatch</item>
+        <item>MaaS360</item>
+        <item>MobileIron</item>
+    </string-array>
+    <string-array name="emm_values_array">
+        <item>@string/emm_provider_emm</item>
+        <item>@string/emm_provider_airwatch</item>
+        <item>@string/emm_provider_maas360</item>
+        <item>@string/emm_provider_mobileiron</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="export_completed_description">
+        <item></item>
+        <item>1 item saved to \"%2$s\"</item>
+        <item>%1$d items saved to \"%2$s\"</item>
+    </string-array>
+    <string-array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </string-array>
+    <string-array name="mandatory_restriction_keys">
+        <item>@string/restriction_key_EmmName</item>
+        <item>@string/restriction_key_PublicId</item>
+    </string-array>
+    <string-array name="n_files">
+        <item>No files</item>
+        <item>1 file</item>
+        <item>%1$d files</item>
+    </string-array>
+    <string-array name="n_folders">
+        <item>No folders</item>
+        <item>1 folder</item>
+        <item>%1$d folders</item>
+    </string-array>
+    <string-array name="n_items_selected">
+        <item>%1$d selected</item>
+        <item>%1$d selected</item>
+        <item>%1$d selected</item>
+    </string-array>
+    <string-array name="new_comments_notification_title">
+        <item></item>
+        <item>New comment on %1$s:</item>
+        <item>New comments on %1$s:</item>
+    </string-array>
+    <integer-array name="pspdf__content_editing_standard_font_sizes">
+        <item>14</item>
+        <item>18</item>
+        <item>24</item>
+        <item>36</item>
+        <item>48</item>
+        <item>64</item>
+        <item>72</item>
+    </integer-array>
+    <string-array name="upload_completed_description">
+        <item></item>
+        <item>1 item added to \"%2$s\"</item>
+        <item>%1$d items added to \"%2$s\"</item>
+    </string-array>
+    <string-array name="x_Name_Conflicts">
+        <item>No name conflicts</item>
+        <item>1 name conflict</item>
+        <item>%1$d name conflicts</item>
+    </string-array>
+    <string-array name="x_days">
+        <item>0 days</item>
+        <item>1 day</item>
+        <item>%1$d days</item>
+    </string-array>
+    <string-array name="x_hours">
+        <item>0 hours</item>
+        <item>1 hour</item>
+        <item>%1$d hours</item>
+    </string-array>
+    <string-array name="x_minutes">
+        <item>0 minutes</item>
+        <item>1 minute</item>
+        <item>%1$d minutes</item>
+    </string-array>
+    <string-array name="x_months">
+        <item>0 months</item>
+        <item>1 month</item>
+        <item>%1$d months</item>
+    </string-array>
+    <string-array name="x_seconds">
+        <item>0 seconds</item>
+        <item>1 second</item>
+        <item>%1$d seconds</item>
+    </string-array>
+    <string-array name="x_weeks">
+        <item>0 weeks</item>
+        <item>1 week</item>
+        <item>%1$d weeks</item>
+    </string-array>
+</resources>

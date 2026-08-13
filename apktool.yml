@@ -1,0 +1,43 @@
+version: 2.12.0
+apkFileName: box.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 30
+  targetSdkVersion: 35
+packageInfo:
+  forcedPackageId: 127
+versionInfo:
+  versionCode: 7020645
+  versionName: 7.2.645
+doNotCompress:
+- arsc
+- dex
+- png
+- webp
+- META-INF/io/opentelemetry/instrumentation/io.opentelemetry.okhttp-3.0.properties
+- META-INF/services/com.fasterxml.jackson.core.JsonFactory
+- androidsupportmultidexversion.txt
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- assets/nutrient/AdobeCA.p12
+- assets/text.txt
+- external/sdk/pendo/io/okhttp3/internal/publicsuffix/publicsuffixes.gz
+- google-http-client.properties
+- io/opentelemetry/api/logs/version.properties
+- io/opentelemetry/api/version.properties
+- io/opentelemetry/context/version.properties
+- io/opentelemetry/exporter/internal/version.properties
+- io/opentelemetry/exporter/logging/version.properties
+- io/opentelemetry/exporter/zipkin/version.properties
+- io/opentelemetry/extension/kotlin/version.properties
+- io/opentelemetry/sdk/autoconfigure/spi/version.properties
+- io/opentelemetry/sdk/common/version.properties
+- io/opentelemetry/sdk/logs/version.properties
+- io/opentelemetry/sdk/metrics/version.properties
+- io/opentelemetry/sdk/trace/version.properties
+- io/opentelemetry/sdk/version.properties
+- io/opentelemetry/semconv/version.properties
+- okhttp3/internal/publicsuffix/publicsuffixes.gz
+- res/raw/msal_native_auth_default_config.json

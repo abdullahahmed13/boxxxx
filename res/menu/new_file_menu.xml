@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@null" android:id="@id/word_doc" android:title="@string/doc_type_word_document" />
+    <item android:icon="@null" android:id="@id/powerpoint_doc" android:title="@string/doc_type_powerpoint_presentation" />
+    <item android:icon="@null" android:id="@id/spreadsheet_doc" android:title="@string/doc_type_excel_spreadsheet" />
+    <item android:icon="@null" android:id="@id/text_doc" android:title="@string/doc_type_text_document" />
+</menu>

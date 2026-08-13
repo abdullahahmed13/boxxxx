@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_box_ai" android:id="@id/menu_box_ai" android:title="@string/box_ai" />
+    <item android:icon="@drawable/ic_share_grey_24dp" android:id="@id/menu_share" android:title="@string/LO_Share" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_link_grey_24dp" android:id="@id/menu_copy_link" android:title="@string/LO_Copy_Link" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_collections_star" android:id="@id/menu_collections" android:title="@string/Collections" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_checkmark_badge_underline" android:id="@id/menu_save_for_offline" android:title="@string/Make_available_offline" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_checkmark_badge_underline" android:id="@id/menu_remove_offline" android:title="@string/Remove_offline" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_file_download_grey_24dp" android:id="@id/menu_download" android:title="@string/Download" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_file_upload_grey_24dp" android:id="@id/menu_upload_new_version" android:title="@string/LO_Upload_New_Vers" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_pencil24" android:id="@id/menu_rename" android:title="@string/Rename" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_copy24_android" android:id="@id/menu_copy_or_move" android:title="@string/copy_move" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_watermark" android:id="@id/menu_watermarking" android:title="@string/watermarking" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_trash24" android:id="@id/menu_delete" android:title="@string/LS_Delete" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_box_right_arrow" android:id="@id/menu_leave_file" android:title="@string/Leave_file" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_info" android:id="@id/menu_file_info" android:title="@string/file_info" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_folderpersonal20" android:id="@id/menu_view_containing_folder" android:title="@string/view_containing_folder" android:iconTint="?contentSecondary" />
+</menu>

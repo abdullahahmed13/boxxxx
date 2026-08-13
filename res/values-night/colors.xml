@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="alertDialogBackground">@color/m3_sys_color_dark_surface</color>
+    <color name="popup_menu_fill">#ff383838</color>
+    <color name="pspdf__background">@color/pspdf__backgroundDark</color>
+    <color name="pspdf__errorContainer">@color/pspdf__errorContainerDark</color>
+    <color name="pspdf__onPrimary">@color/pspdf__onPrimaryDark</color>
+    <color name="pspdf__primary">@color/pspdf__primaryDark</color>
+</resources>

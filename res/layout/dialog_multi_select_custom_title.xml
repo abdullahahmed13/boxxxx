@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="@dimen/dialog_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Box.Medium.20sp.Content" android:layout_gravity="center_vertical" android:id="@id/dialog_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center_vertical" android:id="@id/add_item_button" android:background="@drawable/circular_ripple_btn_blue" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_add_24dp" android:scaleType="fitCenter" android:tint="?mainActiveControl" />
+</LinearLayout>

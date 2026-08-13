@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="8.0dip" android:insetRight="8.0dip" android:insetTop="8.0dip" android:insetBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <vector android:height="24.0dip" android:width="24.0dip" android:autoMirrored="true" android:viewportWidth="24.0" android:viewportHeight="24.0">
+        <path android:fillColor="#00000000" android:pathData="M21,12L12,12" android:strokeColor="#ff000000" android:strokeWidth="1.5" android:strokeLineCap="round" />
+        <path android:fillColor="#00000000" android:pathData="M21,17L12,17" android:strokeColor="#ff000000" android:strokeWidth="1.5" android:strokeLineCap="round" />
+        <path android:fillColor="#00000000" android:pathData="M21,7L12,7" android:strokeColor="#ff000000" android:strokeWidth="1.5" android:strokeLineCap="round" />
+        <path android:fillColor="#00000000" android:pathData="M5.5,6L8,8.5M5.5,6L3,8.5M5.5,6L5.5,12.5" android:strokeColor="#ff000000" android:strokeWidth="1.5" android:strokeLineCap="round" />
+        <path android:fillColor="#00000000" android:pathData="M5.5,18.5L8,16M5.5,18.5L3,16M5.5,18.5L5.5,12" android:strokeColor="#ff000000" android:strokeWidth="1.5" android:strokeLineCap="round" />
+    </vector>
+</inset>

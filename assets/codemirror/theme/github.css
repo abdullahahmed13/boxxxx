@@ -1,0 +1,127 @@
+/**
+    Name:       GitHub Light Theme for CodeMirror
+    Colors matched from GitHub's style
+ */
+.CodeMirror {
+    background: transparent;
+    font-size: small;
+    color: #333;
+}
+
+/* Comments and quotes */
+.cm-s-github span.cm-comment,
+.cm-s-github span.cm-quote {
+    color: #998;
+    font-style: italic;
+}
+
+/* Keywords, tags, and substitutions */
+.cm-s-github span.cm-keyword,
+.cm-s-github span.cm-selector-tag,
+.cm-s-github span.cm-subst {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Numbers, literals, variables, template variables, and tag attributes */
+.cm-s-github span.cm-number,
+.cm-s-github span.cm-literal,
+.cm-s-github span.cm-variable,
+.cm-s-github span.cm-variable-2,
+.cm-s-github span.cm-template-variable,
+.cm-s-github span.cm-tag .cm-attr {
+    color: #008080;
+}
+
+/* Strings and doctags */
+.cm-s-github span.cm-string,
+.cm-s-github span.cm-doctag {
+    color: #d14;
+}
+
+/* Titles, sections, and selector IDs */
+.cm-s-github span.cm-title,
+.cm-s-github span.cm-section,
+.cm-s-github span.cm-selector-id {
+    color: #900;
+    font-weight: bold;
+}
+
+/* Types and class titles */
+.cm-s-github span.cm-type,
+.cm-s-github span.cm-class .cm-title {
+    color: #458;
+    font-weight: bold;
+}
+
+/* Tags, names, and attributes */
+.cm-s-github span.cm-tag,
+.cm-s-github span.cm-name,
+.cm-s-github span.cm-attribute {
+    color: #000080;
+    font-weight: normal;
+}
+
+/* Regex and links */
+.cm-s-github span.cm-regexp,
+.cm-s-github span.cm-link {
+    color: #009926;
+}
+
+/* Symbols and bullets */
+.cm-s-github span.cm-symbol,
+.cm-s-github span.cm-bullet {
+    color: #990073;
+}
+
+/* Built-in and built-in names */
+.cm-s-github span.cm-builtin,
+.cm-s-github span.cm-builtin-name {
+    color: #0086b3;
+}
+
+/* Meta information */
+.cm-s-github span.cm-meta {
+    color: #999;
+    font-weight: bold;
+}
+
+/* Deletions and additions */
+.cm-s-github span.cm-deletion {
+    background: #fdd;
+}
+
+.cm-s-github span.cm-addition {
+    background: #dfd;
+}
+
+/* Emphasis and strong text */
+.cm-s-github span.cm-emphasis {
+    font-style: italic;
+}
+
+.cm-s-github span.cm-strong {
+    font-weight: bold;
+}
+
+/* Active line background */
+.cm-s-github .CodeMirror-activeline-background {
+    background: #f8f8f8;
+}
+
+/* Matching brackets */
+.cm-s-github .CodeMirror-matchingbracket {
+    outline: 1px solid grey;
+    color: black !important;
+}
+
+.CodeMirror-hints.github {
+    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+    color: #616569;
+    background-color: #f8f8f8 !important;
+}
+
+.CodeMirror-hints.github .CodeMirror-hint-active {
+    background-color: #d1d5da !important;
+    color: #24292e !important;
+}

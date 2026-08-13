@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?appBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/empty_item_layout" android:paddingLeft="@dimen/empty_padding_side" android:paddingRight="@dimen/empty_padding_side" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/empty_image" android:layout_width="@dimen/empty_icon_size" android:layout_height="@dimen/empty_icon_size" android:layout_marginBottom="@dimen/empty_text_header_margin" android:src="@drawable/ic_collectionstar140" android:scaleType="fitCenter" android:alpha="@dimen/empty_image_alpha" app:layout_constraintBottom_toTopOf="@id/empty_text" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:tint="?colorAccent" />
+        <TextView android:textAppearance="@style/TextAppearance.Box.Medium.15sp.App" android:gravity="center_horizontal" android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textAppearance="@style/TextAppearance.Box.Normal.12sp.AppSecondary" android:gravity="center_horizontal" android:id="@id/empty_subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/empty_subtext_padding" android:lines="3" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/empty_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:indeterminate="true" />
+</FrameLayout>

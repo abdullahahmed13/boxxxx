@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/folder_batch_menus">
+        <item android:id="@id/folder_box_ai" android:title="@string/box_ai" app:actionLayout="@layout/menu_item_box_ai" app:showAsAction="ifRoom" />
+        <item android:icon="@drawable/ic_copy24_android" android:id="@id/folder_batch_copy_move" android:title="@string/copy_move" app:iconTint="?topBarActionModeControl" app:showAsAction="always" />
+        <item android:icon="@null" android:id="@id/folder_batch_select" android:title="@string/Select_all" app:showAsAction="never" />
+        <item android:icon="@null" android:id="@id/folder_batch_save_for_offline" android:title="@string/Make_available_offline" app:showAsAction="never" />
+        <item android:icon="@null" android:id="@id/folder_batch_remove_offline" android:title="@string/Remove_offline" app:showAsAction="never" />
+        <item android:icon="@null" android:id="@id/folder_batch_export" android:title="@string/Download" app:showAsAction="never" />
+        <item android:icon="@null" android:id="@id/folder_batch_delete" android:title="@string/LO_Delete" app:showAsAction="never" />
+    </group>
+    <item android:icon="@null" android:id="@id/folder_batch_deselect" android:visible="false" android:title="@string/Deselect_all" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Box.Medium.14sp.Content" android:gravity="center_vertical" android:id="@id/name" android:background="@drawable/token_background" android:paddingLeft="24.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/box_sharesdk_chip_size" android:layout_marginLeft="-16.0dip" android:layout_toRightOf="@id/collaborator_initials" />
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:gravity="center" android:layout_gravity="center" android:id="@id/collaborator_initials" android:layout_width="@dimen/box_sharesdk_chip_size" android:layout_height="@dimen/box_sharesdk_chip_size" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:textAllCaps="true" android:textAlignment="center" />
+</RelativeLayout>

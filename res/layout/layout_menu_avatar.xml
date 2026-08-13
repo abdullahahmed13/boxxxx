@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="@dimen/menu_item_size" android:layout_height="@dimen/menu_item_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.box.androidsdk.content.views.BoxAvatarView android:layout_gravity="center" android:id="@id/avatar_view" android:layout_width="@dimen/menu_large_item_icon_size" android:layout_height="@dimen/menu_large_item_icon_size" app:showOutline="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <FrameLayout android:layout_gravity="center" android:background="?selectableItemBackgroundBorderless" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

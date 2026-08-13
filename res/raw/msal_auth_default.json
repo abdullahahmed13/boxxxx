@@ -1,0 +1,17 @@
+{
+  "client_id": "dc4ae7e8-b3fa-41d6-aba3-8dc5d31d4339",
+  "authorization_user_agent": "WEBVIEW",
+  "redirect_uri" : "msauth://com.box.android/Gg2k%2F6ijsEmhu%2FhfLdmSUUfKdX8%3D",
+  "account_mode": "SINGLE",
+  "broker_redirect_uri_registered": true,
+  "client_capabilities": "protapp",
+  "authorities": [
+    {
+      "type": "AAD",
+      "audience": {
+        "type": "AzureADMultipleOrgs",
+        "tenant_id": "organizations"
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.box.android.base.presentation.views.TouchInterceptorViewGroup android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.fragment.app.FragmentContainerView android:name="com.pspdfkit.ui.PdfUiFragment" android:id="@id/fragment_container_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.box.android.base.presentation.views.TouchInterceptorViewGroup>

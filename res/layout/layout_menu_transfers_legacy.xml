@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="@dimen/menu_item_size" android:layout_height="@dimen/menu_item_size" android:contentDescription="@string/transfers"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/transfer_menu_progress_container" android:layout_width="@dimen/menu_large_item_icon_size" android:layout_height="@dimen/menu_large_item_icon_size">
+        <ProgressBar android:layout_gravity="center" android:id="@id/transfer_menu_progress" android:layout_width="@dimen/menu_large_item_icon_size" android:layout_height="@dimen/menu_large_item_icon_size" android:max="100" android:indeterminateOnly="false" android:indeterminateDrawable="@drawable/transfer_progress_circle_legacy" android:progressDrawable="@drawable/transfer_progress_circle_legacy" android:rotation="270.0" />
+        <FrameLayout android:layout_gravity="right|top" android:id="@id/transfer_menu_indicator_container" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_margin="2.0dip">
+            <ImageView android:layout_gravity="center" android:background="@drawable/menu_indicator_circle_blue" android:layout_width="9.0dip" android:layout_height="9.0dip" />
+            <ImageView android:layout_gravity="center" android:id="@id/transfer_menu_status_indicator" android:background="@drawable/menu_indicator_circle" android:layout_width="6.0dip" android:layout_height="6.0dip" />
+        </FrameLayout>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/transfer_icon" android:layout_width="@dimen/menu_small_item_icon_size" android:layout_height="@dimen/menu_small_item_icon_size" android:src="@drawable/ic_transfers_toolbar" />
+    <FrameLayout android:layout_gravity="center" android:background="?selectableItemBackgroundBorderless" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

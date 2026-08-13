@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/sort_by_name" android:title="@string/By_Name" android:checkable="true" android:iconTint="?contentSecondary" />
+    <item android:id="@id/sort_by_size" android:title="@string/By_Size" android:checkable="true" android:iconTint="?contentSecondary" />
+    <item android:id="@id/sort_by_date" android:title="@string/By_Date" android:checkable="true" android:iconTint="?contentSecondary" />
+</menu>

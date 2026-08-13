@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/popup_menu_container" android:background="@drawable/popup_rectangle_rounded" android:layout_width="wrap_content" android:layout_height="@dimen/box_previewsdk_popup_menu_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:textAppearance="@style/TextAppearance.Box.Medium.12sp" android:id="@id/view_comment" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/view_comment" android:drawablePadding="@dimen/box_previewsdk_popup_menu_drawable_padding" android:drawableStart="@drawable/ic_activity16_blue" app:drawableTint="?colorAccent" style="@style/Widget.Box.TextButton.Accent" />
+    <Button android:textAppearance="@style/TextAppearance.Box.Medium.12sp" android:id="@id/delete_comment" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/pspdf__delete" android:drawableLeft="@drawable/ic_trash16_blue" android:drawablePadding="@dimen/box_previewsdk_popup_menu_drawable_padding" app:drawableTint="?colorAccent" style="@style/Widget.Box.TextButton.Accent" />
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="Assigned_approval_task_file">
+        <item quantity="other">&lt;b>%1$s&lt;/b> assigned an approval task on multiple files</item>
+    </plurals>
+    <plurals name="Assigned_task_file">
+        <item quantity="other">&lt;b>%1$s&lt;/b> assigned a task on multiple files</item>
+    </plurals>
+    <plurals name="Assignees_less_than_20">
+        <item quantity="other">%1$s Assignees</item>
+        <item quantity="one">%1$s Assignee</item>
+    </plurals>
+    <plurals name="Sent_approval_task_file">
+        <item quantity="other">You assigned an approval task on multiple files</item>
+    </plurals>
+    <plurals name="Sent_task_file">
+        <item quantity="other">You assigned a task on multiple files</item>
+    </plurals>
+    <plurals name="There_are_x_files">
+        <item quantity="other">Conflicting filenames %1$s</item>
+        <item quantity="one">Conflicting filename %1$s</item>
+    </plurals>
+    <plurals name="add_num_items">
+        <item quantity="other">Add %1$d items</item>
+        <item quantity="one">Add %1$d item</item>
+    </plurals>
+    <plurals name="box_ai_num_files">
+        <item quantity="other">%d files</item>
+        <item quantity="one">%d file</item>
+    </plurals>
+    <plurals name="box_sharesdk_collaborators_count_plurals">
+        <item quantity="other">@string/box_sharedsdk_collaborators_count</item>
+        <item quantity="one">@string/box_sharedsdk_collaborators_count_1</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Fast forward %d seconds</item>
+        <item quantity="one">Fast forward %d second</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Rewind %d seconds</item>
+        <item quantity="one">Rewind %d second</item>
+    </plurals>
+    <plurals name="gssdk_batch_mode_codes_detected">
+        <item quantity="other">Scanned %d barcodes</item>
+        <item quantity="one">Scanned %d barcode</item>
+    </plurals>
+    <plurals name="gssdk_flow_confirm_cancellation">
+        <item quantity="other">Discard %d pages?</item>
+        <item quantity="one">Discard one page?</item>
+    </plurals>
+    <plurals name="items_selected">
+        <item quantity="other">%d items selected</item>
+        <item quantity="one">%d item selected</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="num_items">
+        <item quantity="other">%d items</item>
+        <item quantity="one">%d item</item>
+    </plurals>
+    <plurals name="num_references">
+        <item quantity="other">%d references</item>
+        <item quantity="one">%d reference</item>
+    </plurals>
+    <plurals name="numberOfDeleteAndRemoveSelfFromItems">
+        <item quantity="other">Are you sure you want to delete these %1$d items? You will be removed from shared items that cannot be deleted.</item>
+        <item quantity="one">Are you sure you want to delete these %1$d items? You will be removed from shared items that cannot be deleted.</item>
+    </plurals>
+    <plurals name="numberOfDeleteFiles">
+        <item quantity="other">Are you sure you want to delete these %1$d files?</item>
+        <item quantity="one">Are you sure you want to delete this file?</item>
+    </plurals>
+    <plurals name="numberOfDeleteFolders">
+        <item quantity="other">Are you sure you want to delete these %1$d folders?</item>
+        <item quantity="one">Are you sure you want to delete this folder and all of its contents?</item>
+    </plurals>
+    <plurals name="numberOfDeleteItems">
+        <item quantity="other">Are you sure you want to delete these %1$d items?</item>
+        <item quantity="one">Are you sure you want to delete these %1$d items?</item>
+    </plurals>
+    <plurals name="numberOfRemoveSelfFromFiles">
+        <item quantity="other">Are you sure you want to remove yourself from these shared files?</item>
+        <item quantity="one">Are you sure you want to remove yourself from this shared file?</item>
+    </plurals>
+    <plurals name="numberOfRemoveSelfFromFolders">
+        <item quantity="other">Are you sure you want to remove yourself from these shared folders?</item>
+        <item quantity="one">Are you sure you want to remove yourself from this shared folder?</item>
+    </plurals>
+    <plurals name="numberOfRemoveSelfFromItems">
+        <item quantity="other">Are you sure you want to remove yourself from these shared items?</item>
+        <item quantity="one">Are you sure you want to remove yourself from these shared items?</item>
+    </plurals>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="other">%d Annotations</item>
+        <item quantity="zero">No Annotations</item>
+        <item quantity="one">%d Annotation</item>
+    </plurals>
+    <plurals name="pspdf__lines_number">
+        <item quantity="other">%d Lines</item>
+        <item quantity="one">%d Line</item>
+    </plurals>
+    <plurals name="pspdf__measurements_used_elsewhere">
+        <item quantity="other">This scale is used in %d measurements.</item>
+        <item quantity="one">This scale is used in %d measurement.</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="other">All (%d Pages)</item>
+        <item quantity="one">All (%d Page)</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="other">%d matches found</item>
+        <item quantity="zero">No matches found</item>
+        <item quantity="one">%d match found</item>
+    </plurals>
+    <plurals name="see_more_replies">
+        <item quantity="other">See %1$s more replies</item>
+        <item quantity="one">See 1 more reply</item>
+    </plurals>
+    <plurals name="see_replies">
+        <item quantity="other">See %1$s replies</item>
+        <item quantity="one">See reply</item>
+    </plurals>
+    <plurals name="version_upload_with_multiple_collaborator">
+        <item quantity="other">%1$s collaborators uploaded v%2$s</item>
+        <item quantity="one">%1$s collaborator uploaded v%2$s</item>
+    </plurals>
+    <plurals name="version_uploaded_with_multiple_collaborator">
+        <item quantity="other">&lt;b>%1$s&lt;/b> collaborators uploaded &lt;b>%2$s&lt;/b></item>
+        <item quantity="one">&lt;b>%1$s&lt;/b> collaborator uploaded &lt;b>%2$s&lt;/b></item>
+    </plurals>
+</resources>

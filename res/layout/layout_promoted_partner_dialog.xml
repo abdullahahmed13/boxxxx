@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="?contentBackground" android:padding="@dimen/dialog_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/partner_image" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="fitCenter" />
+    <TextView android:textAppearance="@style/TextAppearance.Box.Normal.18sp.Content" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dialog_space_between_content" />
+    <TextView android:textAppearance="@style/TextAppearance.Box.Normal.16sp.ContentSecondary" android:id="@id/dialog_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dialog_space_between_content" />
+</LinearLayout>

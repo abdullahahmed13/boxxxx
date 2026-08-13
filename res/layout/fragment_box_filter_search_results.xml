@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?appBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/clear_apply_bar">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="@style/TextAppearance.Box.Normal.14sp.AppSecondary" android:id="@id/fileTypeLabel" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/file_type_label" />
+                    <include android:id="@id/audioFileTypeContainer" layout="@layout/filter_search_results_file_type_item" />
+                    <include android:id="@id/autocadFileTypeContainer" layout="@layout/filter_search_results_file_type_item" />
+                    <include android:id="@id/boxnoteFileTypeContainer" layout="@layout/filter_search_results_file_type_item" />
+                    <include android:id="@id/documentFileTypeContainer" layout="@layout/filter_search_results_file_type_item" />
+                    <include android:id="@id/folderFileTypeContainer" layout="@layout/filter_search_results_file_type_item" />
+                    <TextView android:textAppearance="@style/TextAppearance.Box.Normal.16sp.ContentSecondary" android:gravity="center_vertical" android:id="@id/seeMoreFileType" android:background="?contentBackground" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:minHeight="40.0dip" android:text="@string/search_filter_file_type_see_more" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/hiddenFileTypes" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <include android:id="@id/imageFileTypeContainer" layout="@layout/filter_search_results_file_type_item" />
+                        <include android:id="@id/pdfFileTypeContainer" layout="@layout/filter_search_results_file_type_item" />
+                        <include android:id="@id/presentationFileTypeContainer" layout="@layout/filter_search_results_file_type_item" />
+                        <include android:id="@id/spreadsheetFileTypeContainer" layout="@layout/filter_search_results_file_type_item" />
+                        <include android:id="@id/videoFileTypeContainer" layout="@layout/filter_search_results_file_type_item" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/dateModified" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="@style/TextAppearance.Box.Normal.14sp.AppSecondary" android:id="@id/dateModifiedLabel" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/date_modified_label" />
+                    <include android:id="@id/dateModifiedContainerAnyTime" layout="@layout/filter_search_results_expandable_item" />
+                    <include android:id="@id/dateModifiedContainerPastDay" layout="@layout/filter_search_results_expandable_item" />
+                    <include android:id="@id/dateModifiedContainerPastWeek" layout="@layout/filter_search_results_expandable_item" />
+                    <include android:id="@id/dateModifiedContainerPastMonth" layout="@layout/filter_search_results_expandable_item" />
+                    <include android:id="@id/dateModifiedContainerPastYear" layout="@layout/filter_search_results_expandable_item" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/size" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="@style/TextAppearance.Box.Normal.14sp.AppSecondary" android:id="@id/itemSizeLabel" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/item_size_label" />
+                    <include android:id="@id/itemSizeContainerAny" layout="@layout/filter_search_results_expandable_item" />
+                    <include android:id="@id/itemSizeContainerLessThanOne" layout="@layout/filter_search_results_expandable_item" />
+                    <include android:id="@id/itemSizeContainerOneToFive" layout="@layout/filter_search_results_expandable_item" />
+                    <include android:id="@id/itemSizeContainerFiveToTwentyFive" layout="@layout/filter_search_results_expandable_item" />
+                    <include android:id="@id/itemSizeContainerTwentyFiveToOneHundred" layout="@layout/filter_search_results_expandable_item" />
+                    <include android:id="@id/itemSizeContainerOneHundredToOneThousand" layout="@layout/filter_search_results_expandable_item" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout android:id="@id/clear_apply_bar" android:background="?topLayerBackground" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:elevation="4.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <Button android:id="@id/clear_filters_button" android:paddingLeft="24.0dip" android:text="@string/clear_filters" android:layout_toLeftOf="@id/apply_button" android:layout_centerVertical="true" style="@style/Widget.Box.TextButton.Accent" />
+            <Button android:id="@id/apply_button" android:paddingRight="24.0dip" android:text="@string/apply" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/Widget.Box.TextButton.Accent" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

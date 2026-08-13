@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Compat.Notification.Title" android:id="@id/notification_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:textAppearance="@style/TextAppearance.Compat.Notification.Title" android:id="@id/recording_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/notification_title" android:layout_centerInParent="true" android:textAllCaps="true" style="@style/Widget.Compat.NotificationActionContainer" />
+</RelativeLayout>

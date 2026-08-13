@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_browse_bottom_nav_old" android:id="@id/action_browse" android:orderInCategory="100" android:title="@string/box_browsesdk_title" />
+    <item android:icon="@drawable/ic_hubs" android:id="@id/action_hubs" android:orderInCategory="200" android:title="@string/hubs" />
+    <item android:icon="@drawable/ic_collections_bottom_bar" android:id="@id/action_collections" android:orderInCategory="300" android:title="@string/Collections" />
+    <item android:icon="@drawable/ic_search_bottom_nav" android:id="@id/action_search" android:orderInCategory="400" android:title="@string/search" />
+    <item android:icon="@drawable/ic_inbox_bottom_nav" android:id="@id/action_inbox" android:orderInCategory="500" android:title="@string/Inbox" />
+</menu>

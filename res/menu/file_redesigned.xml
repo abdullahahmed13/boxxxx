@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/boxai" android:id="@id/menu_box_ai" android:title="@string/box_ai" />
+    <item android:icon="@drawable/arrow_arched_right" android:id="@id/menu_share" android:title="@string/LO_Share" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/copy_link" android:id="@id/menu_copy_link" android:title="@string/LO_Copy_Link" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_collections" android:id="@id/menu_collections" android:title="@string/add_to_collections" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/cloud_down" android:id="@id/menu_save_for_offline" android:title="@string/Make_available_offline" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/cloud_up" android:id="@id/menu_remove_offline" android:title="@string/Remove_offline" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/download" android:id="@id/menu_download" android:title="@string/Download" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/upload" android:id="@id/menu_upload_new_version" android:title="@string/LO_Upload_New_Vers" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/pencil" android:id="@id/menu_rename" android:title="@string/Rename" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/clipboard" android:id="@id/menu_copy_or_move" android:title="@string/copy_move" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_watermark" android:id="@id/menu_watermarking" android:title="@string/watermarking" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_box_right_arrow" android:id="@id/menu_leave_file" android:title="@string/Leave_file" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/information_circle" android:id="@id/menu_file_info" android:title="@string/file_info" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/folder" android:id="@id/menu_view_containing_folder" android:title="@string/view_containing_folder" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/trash" android:id="@id/menu_delete" android:title="@string/LS_Delete" android:iconTint="?contentSecondary" />
+</menu>

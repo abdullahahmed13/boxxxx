@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.box.androidsdk.content.views.BoxAvatarView android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:gravity="center" android:layout_gravity="center" android:id="@id/collaborator_initials" android:layout_width="@dimen/box_sharesdk_collaboration_thumb_size" android:layout_height="@dimen/box_sharesdk_collaboration_thumb_size" android:layout_marginLeft="@dimen/box_sharesdk_horizontal_list_item_margin" android:layout_marginRight="@dimen/box_sharesdk_horizontal_list_item_margin" android:textAllCaps="true" android:textAlignment="center"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

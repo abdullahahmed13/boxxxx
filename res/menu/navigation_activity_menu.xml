@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_toolbar_sort" android:id="@id/folder_sort" android:orderInCategory="0" android:title="@string/Sort_by" app:showAsAction="always" />
+    <item android:id="@id/transfers_menu_item" android:orderInCategory="4" android:title="@string/transfers" app:actionLayout="@layout/layout_menu_transfers" app:showAsAction="always" />
+    <item android:id="@id/account_settings_menu_item" android:orderInCategory="5" android:title="@string/account_settings" app:actionLayout="@layout/layout_menu_avatar" app:showAsAction="always" />
+</menu>

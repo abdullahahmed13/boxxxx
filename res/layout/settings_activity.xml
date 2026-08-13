@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:background="?topBarBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/mainSettingsLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+        <include android:id="@id/settingsToolbar" app:layout_constraintTop_toTopOf="parent" layout="@layout/toolbar" />
+        <ScrollView android:id="@id/option_main" android:background="?contentBackground" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/settingsToolbar">
+            <LinearLayout android:orientation="vertical" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/Options_GroupContainer">
+                    <TextView android:text="@string/account" style="@style/Options_GroupHeaderText" />
+                    <RelativeLayout android:id="@id/btnSwitchAccounts" style="@style/Options_ItemContainer">
+                        <TextView android:id="@id/switchAccountsLabel" android:text="@string/Try_with_another_account" android:layout_weight="1.0" style="@style/Options_ItemText" />
+                        <TextView android:id="@id/switchAccountsDescription" android:layout_below="@id/switchAccountsLabel" style="@style/Options_ItemSubText" />
+                        <ImageView android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_account_circle_blue" android:layout_alignParentTop="true" android:layout_alignParentRight="true" app:tint="?colorAccent" />
+                    </RelativeLayout>
+                    <LinearLayout android:id="@id/btnLogout" style="@style/Options_ItemContainer">
+                        <TextView android:id="@id/txtLogout" android:layout_width="0.0dip" android:text="@string/Log_Out" android:layout_weight="1.0" style="@style/Options_ItemText" />
+                        <ImageView android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_logout_blue" app:tint="?colorAccent" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView style="@style/Options_ItemDivider" />
+                <LinearLayout style="@style/Options_GroupContainer">
+                    <TextView android:text="@string/STORAGE" style="@style/Options_GroupHeaderText" />
+                    <TextView android:id="@id/storageInfo" android:paddingLeft="6.0dip" style="@style/Options_ItemText" />
+                </LinearLayout>
+                <ImageView style="@style/Options_ItemDivider" />
+                <LinearLayout style="@style/Options_GroupContainer">
+                    <fragment android:name="com.box.android.activities.settings.SettingsNotificationsFragment" android:id="@id/settingsNotificationsFragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+                <ImageView style="@style/Options_ItemDivider" />
+                <LinearLayout android:id="@id/continous_capture_container" style="@style/Options_GroupContainer">
+                    <TextView android:id="@id/continous_capture_header" android:text="@string/settings_capture_header" style="@style/Options_GroupHeaderText.WithoutPaddingBottom" />
+                    <TextView android:id="@id/continous_capture_manage_settings" android:text="@string/settings_launch_into_capture_manage_settings" style="@style/Options_GroupHeaderSubText" />
+                </LinearLayout>
+                <ImageView style="@style/Options_ItemDivider" />
+                <LinearLayout style="@style/Options_GroupContainer">
+                    <TextView android:text="@string/SECURITY" style="@style/Options_GroupHeaderText" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/requirePasscodeContainer" style="@style/Options_ItemContainer">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:text="@string/Require_passcode" style="@style/Options_ItemText" />
+                            <TextView android:id="@id/requirePasscodeSubtext" android:text="@string/Require_passcode_subtext" style="@style/Options_ItemSubText" />
+                        </LinearLayout>
+                        <androidx.appcompat.widget.SwitchCompat android:layout_gravity="top" android:id="@id/requirePasscodeSwitch" style="@style/Options_Switch" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/Options_PasscodeOptions" android:padding="0.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView style="@style/Options_ItemDivider" />
+                    <LinearLayout style="@style/Options_GroupContainer">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/allowBiometricsContainer" style="@style/Options_ItemContainer">
+                            <TextView android:text="@string/allowBiometrics" android:layout_weight="1.0" style="@style/Options_ItemText" />
+                            <androidx.appcompat.widget.SwitchCompat android:id="@id/allowBiometricsSwitch" style="@style/Options_Switch" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/changePassCode" style="@style/Options_ItemContainer">
+                            <TextView android:text="@string/Change_pass_code" style="@style/Options_ItemText" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/changePassCodeTimeout" style="@style/Options_ItemContainer">
+                            <TextView android:text="@string/Passcode_timeout" style="@style/Options_ItemText" />
+                            <TextView android:id="@id/currentPasscodeInterval" style="@style/Options_ItemSubText" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView style="@style/Options_ItemDivider" />
+                <LinearLayout style="@style/Options_GroupContainer">
+                    <TextView android:text="@string/FOLDER_ACTIVITY" style="@style/Options_GroupHeaderText" />
+                    <LinearLayout android:id="@id/btnClearDownloads" style="@style/Options_ItemContainer">
+                        <TextView android:id="@id/txtcleardownloads" android:text="@string/Clear_offline_files" style="@style/Options_ItemText" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView style="@style/Options_ItemDivider" />
+                <LinearLayout style="@style/Options_GroupContainer">
+                    <fragment android:name="com.box.android.autoupload.AutoContentUploadFragment" android:id="@id/autoContentUploadFragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+                <ImageView style="@style/Options_ItemDivider" />
+                <LinearLayout android:id="@id/files_and_folders_container" style="@style/Options_GroupContainer">
+                    <TextView android:id="@id/files_and_folders_header" android:text="@string/files_and_folders_settings_title" style="@style/Options_GroupHeaderText.WithoutPaddingBottom" />
+                    <TextView android:id="@id/files_and_folders_manage_settings" android:text="@string/settings_launch_into_capture_manage_settings" style="@style/Options_GroupHeaderSubText" />
+                    <ImageView style="@style/Options_ItemDivider" />
+                </LinearLayout>
+                <LinearLayout style="@style/Options_GroupContainer">
+                    <TextView android:text="@string/HELP" style="@style/Options_GroupHeaderText" />
+                    <LinearLayout android:id="@id/btnUploadLogs" style="@style/Options_ItemContainer">
+                        <TextView android:text="@string/upload_logs" style="@style/Options_ItemText" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/btnHelpCenter" style="@style/Options_ItemContainer">
+                        <TextView android:text="@string/help_center" style="@style/Options_ItemText" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/btnPrivacyPolicy" style="@style/Options_ItemContainer">
+                        <TextView android:text="@string/PrivacyPolicy" style="@style/Options_ItemText" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/btnTermsOfService" style="@style/Options_ItemContainer">
+                        <TextView android:text="@string/LS_Terms_of_Servic" style="@style/Options_ItemText" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/debugGroup" style="@style/Options_GroupContainer">
+                    <ImageView style="@style/Options_ItemDivider" />
+                    <TextView android:text="@string/DEBUG" style="@style/Options_GroupHeaderText" />
+                    <LinearLayout android:id="@id/feature_flips" style="@style/Options_ItemContainer">
+                        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/feature_flip_debug_bottom_margin" android:text="@string/feature_flip_debug_override" style="@style/Options_ItemText" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/split_environment" style="@style/Options_ItemContainer">
+                        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/feature_flip_debug_bottom_margin" android:text="@string/split_environment_override" style="@style/Options_ItemText" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView style="@style/Options_ItemDivider" />
+                <LinearLayout android:gravity="center" style="@style/Options_GroupContainer">
+                    <TextView android:id="@id/version" android:layout_marginRight="0.0dip" style="@style/Options_ItemSubText" />
+                </LinearLayout>
+                <View android:id="@id/last_item" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:id="@id/settings_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/bottom_optionals_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:layout_behavior="com.box.android.base.views.behavior.ScrollDisappearBehavior">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_gravity="bottom" android:id="@id/snackbar_container" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/scan_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.geniusscansdk.readablecodeflow.ReadableCodeOverlayView android:id="@id/readable_code_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+        <FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:layout_gravity="start" android:id="@id/cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/gssdk_flow_cancel" app:icon="@drawable/baseline_close_24" app:iconTint="@android:color/white" style="?materialIconButtonStyle" />
+        </FrameLayout>
+    </FrameLayout>
+    <include android:id="@id/batch_mode_bottom_sheet" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:behavior_hideable="false" app:behavior_peekHeight="280.0dip" app:behavior_skipCollapsed="false" app:layout_behavior="@string/bottom_sheet_behavior" layout="@layout/batch_mode_bottom_sheet" style="@style/Widget.Material3.BottomSheet" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

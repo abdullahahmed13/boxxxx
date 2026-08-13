@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="SD" path="." />
+    <cache-path name="internal_cache" path="." />
+    <root-path name="external_files" path="/storage/" />
+    <files-path name="logs" path="logs/" />
+    <files-path name="uploads" path="." />
+</paths>

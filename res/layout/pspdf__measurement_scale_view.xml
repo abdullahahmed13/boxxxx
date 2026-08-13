@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="end|bottom" android:id="@id/pspdf_measurement_scale_view_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/pspdf__measurement_scale_view_width" android:layout_marginEnd="@dimen/pspdf__margin_6">
+        <androidx.cardview.widget.CardView android:id="@id/pspdf_measurement_scale_view_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/pspdf__margin_6" android:layout_centerInParent="true" android:layout_alignParentEnd="true" app:cardCornerRadius="@dimen/pspdf__measurement_scale_fab_radius">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/pspdf__measurement_scale_fab_padding">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/pspdf__measurement_scale_view_settings_icon" android:layout_width="@dimen/pspdf__measurement_scale_view_icon_size" android:layout_height="@dimen/pspdf__measurement_scale_view_icon_size" android:src="@drawable/pspdf__ic_settings" android:importantForAccessibility="no" app:tint="@color/pspdf__primary" />
+                <com.pspdfkit.ui.LocalizedTextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/pspdf__measurement_scale_view_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/pspdf__measurement_scale_fab_icon_spacing" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <ImageView android:id="@id/pspdf_meassurement_scale_view_not_set" android:layout_width="@dimen/pspdf__measurement_scale_view_icon_size" android:layout_height="@dimen/pspdf__measurement_scale_view_icon_size" android:src="@drawable/pspdf__ic_red_notification" android:layout_alignParentTop="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true" android:elevation="@dimen/pspdf__measurement_scale_view_elevation" />
+    </RelativeLayout>
+</merge>

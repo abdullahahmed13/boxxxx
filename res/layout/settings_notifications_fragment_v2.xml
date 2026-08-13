@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/ENABLE_PUSH_NOTIF" style="@style/Options_GroupHeaderText" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/enableDeviceNotificationsContainer" style="@style/Options_ItemContainer">
+        <TextView android:text="@string/allow_device_push_notification" android:layout_weight="1.0" style="@style/Options_ItemText" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/enableDeviceNotificationsSwitch" style="@style/Options_Switch" />
+    </LinearLayout>
+    <ImageView android:id="@id/customDivider" style="@style/Options_ItemDivider" />
+    <RelativeLayout android:id="@id/allowCollabsPushNotificationContainer" style="@style/Options_ItemContainer">
+        <TextView android:id="@id/allowCollabsPushNotificationLabel" android:text="@string/allow_sharing_push_notification" android:layout_weight="1.0" style="@style/Options_ItemText" />
+        <TextView android:text="@string/sharing_push_notification_description" android:layout_below="@id/allowCollabsPushNotificationLabel" style="@style/Options_ItemSubText" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/allowCollabsPushNotificationCheckBox" style="@style/Options_Checkbox" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/allowCommentsPushNotificationContainer" style="@style/Options_ItemContainer">
+        <TextView android:id="@id/allowCommentsPushNotificationLabel" android:text="@string/comments" android:layout_weight="1.0" style="@style/Options_ItemText" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/allowCommentsPushNotificationCheckBox" style="@style/Options_Checkbox" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/allowTasksPushNotificationContainer" style="@style/Options_ItemContainer">
+        <TextView android:id="@id/allowTasksPushNotificationLabel" android:text="@string/allow_tasks_push_notification" android:layout_weight="1.0" style="@style/Options_ItemText" />
+        <TextView android:text="@string/tasks_push_notification_description" android:layout_below="@id/allowTasksPushNotificationLabel" style="@style/Options_ItemSubText" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/allowTasksPushNotificationCheckBox" style="@style/Options_Checkbox" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/allowUpdatesPushNotificationContainer" style="@style/Options_ItemContainer">
+        <TextView android:id="@id/allowUpdatesPushNotificationLabel" android:text="@string/allow_relevant_updates_push_notification" android:layout_weight="1.0" style="@style/Options_ItemText" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/allowUpdatesPushNotificationCheckBox" style="@style/Options_Checkbox" />
+    </RelativeLayout>
+</LinearLayout>

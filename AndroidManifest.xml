@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" android:installLocation="auto" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.box.android" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:maxSdkVersion="29" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <queries>
+        <package android:name="com.azure.authenticator"/>
+        <package android:name="com.microsoft.windowsintune.companyportal"/>
+        <package android:name="com.box.emm.android"/>
+        <package android:name="com.box.android"/>
+        <package android:name="forgepond.com.box.emm.android"/>
+        <package android:name="com.fiberlink.maas360.android.control"/>
+        <package android:name="androidx.test.orchestrator"/>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.VIDEO_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="youtube.com" android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.speech.RecognitionService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="boxopendirect"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="boxapp"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="boxemm"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="application/pdf"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/pdf"/>
+        </intent>
+        <package android:name="com.microsoft.identity.testuserapp"/>
+        <package android:name="com.microsoft.mockauthapp"/>
+        <package android:name="com.microsoft.mockcp"/>
+        <package android:name="com.microsoft.mockltw"/>
+        <package android:name="com.microsoft.appmanager"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="boxopendirect"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="boxapp"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="boxemm"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.portrait"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <permission android:name="com.box.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.box.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-feature android:name="android.hardware.usb.host" android:required="false"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="false"/>
+    <application android:allowBackup="false" android:allowNativeHeapPointerTagging="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/box_app_name" android:largeHeap="true" android:name="com.box.android.application.BoxApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:uiOptions="splitActionBarWhenNarrow">
+        <meta-data android:name="nutrient_license_key" android:value="@string/NUTRIENT_LICENSE_KEY"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="ocr"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="android.content.APP_RESTRICTIONS" android:resource="@xml/app_restrictions"/>
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <meta-data android:name="insert_debug_logging" android:value="true"/>
+        <meta-data android:name="pnd_debug_logging" android:value="true"/>
+        <meta-data android:name="pnd_jsonpath_log" android:value="true"/>
+        <meta-data android:name="pnd_device_url" android:value="https://pendo-data-prod.box.com"/>
+        <meta-data android:name="pnd_app_url" android:value="https://pendo-data-prod.box.com"/>
+        <meta-data android:name="pnd_data_url" android:value="https://pendo-data-prod.box.com"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.box.android.activities.login.WopiOAuthActivity" android:theme="@style/Theme.Box">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.box.android.fileactivity.presentation.FileActivitiesActivity" android:theme="@style/Theme.Box" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.box.android.activities.login.CustomOAuthActivity" android:theme="@style/Theme.Box" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="login" android:scheme="boxlogin"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.box.android.activities.tasks.SingleTaskActivity" android:theme="@style/Theme.Box.Secondary"/>
+        <activity android:launchMode="singleTask" android:name="com.box.android.activities.tasks.TaskCollaboratorsActivity" android:theme="@style/Theme.Box.Secondary"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.box.android.activities.MainPhone" android:theme="@style/Theme.Box" android:windowSoftInputMode="adjustResize"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:finishOnTaskLaunch="true" android:name="com.box.android.activities.BoxBetaFeatureFlips" android:stateNotNeeded="true" android:theme="@style/Theme.Box.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="feature-flip" android:scheme="box-beta"/>
+                <data android:host="launch-activity"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.box.android.navigation.Navigation" android:theme="@style/Theme.Box" android:windowSoftInputMode="adjustPan"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:finishOnTaskLaunch="true" android:name="com.box.android.activities.MfaCallbackActivity" android:stateNotNeeded="true" android:theme="@style/Theme.Box.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="web_callback" android:scheme="box"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.box.android.browse.cpl.copymove.CopyOrMoveActivity" android:theme="@style/Theme.Box"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.box.android.jobsui.JobsUIActivity" android:theme="@style/Theme.Box"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.box.android.browse.activities.UploadToFolderActivity" android:theme="@style/Theme.Box"/>
+        <activity android:launchMode="singleTop" android:name="com.box.android.preview.boxcanvas.BoxCanvasActivity" android:noHistory="true" android:theme="@style/Theme.Box.NoDisplay"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.box.android.hubs.hubDetails.presentation.HubDetailsActivity" android:theme="@style/Theme.Box"/>
+        <activity android:launchMode="singleTop" android:name="com.box.android.search.presentation.SearchActivity" android:theme="@style/Theme.Box.Secondary"/>
+        <activity android:name="com.google.androidbrowserhelper.trusted.LauncherActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="android.support.customtabs.trusted.DEFAULT_URL" android:value="https://app.box.com"/>
+            <meta-data android:name="android.support.customtabs.trusted.ADDITIONAL_TRUSTED_ORIGINS" android:resource="@array/additional_trusted_origins"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.box.android.activities.SwitchingAccountDialogActivity" android:theme="@style/Theme.Box.Custom.Dialog.Alert"/>
+        <activity android:name="com.box.android.activities.filepicker.LocalFolderChooser" android:theme="@style/Theme.Box"/>
+        <activity android:launchMode="singleTop" android:name="com.box.android.activities.tasks.RenameTaskActivity" android:theme="@style/Theme.Box.Custom.Dialog.Alert" android:windowSoftInputMode="stateVisible|adjustPan"/>
+        <activity android:excludeFromRecents="true" android:name="com.box.android.base.presentation.activities.IntentChooserActivity" android:taskAffinity="" android:theme="@style/Theme.Box.Custom.Dialog.Alert"/>
+        <activity android:name="com.box.android.activities.InfoDialogActivity" android:theme="@style/Theme.Box.Custom.Dialog.Alert"/>
+        <activity android:excludeFromRecents="true" android:name="com.box.android.activities.UploadOverwriteDialogActivity" android:taskAffinity="@string/commonProviderAuthority" android:theme="@style/Theme.Box.Custom.Dialog.Alert"/>
+        <activity android:name="com.box.android.activities.LogoutWarningActivity" android:theme="@style/Theme.Box.Custom.Dialog.Alert"/>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleTop" android:name="com.box.android.activities.ExpiredVersionDialogActivity" android:theme="@style/Theme.Box.Custom.Dialog.Alert"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.box.android.activities.DeleteItemsActivity" android:theme="@style/Theme.Box.Custom.Dialog.Alert"/>
+        <activity android:name="com.box.android.activities.addcontent.CreateDocumentTaskActivity" android:theme="@style/Theme.Box.Custom.Dialog.Alert"/>
+        <activity android:name="com.box.android.activities.addcontent.QuickNoteCreationActivity" android:theme="@style/Theme.Box.Custom.Dialog.Transparent"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.box.android.activities.OpenFile" android:theme="@style/Theme.Box.Custom.Dialog.Alert"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.box.android.base.presentation.activities.CreatePincodeActivity" android:theme="@style/Theme.Box.Custom.Dialog.Alert" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:label="" android:launchMode="singleTop" android:name="com.box.android.base.presentation.activities.Pincode" android:taskAffinity="com.box.android.activities.Pincode" android:theme="@style/Theme.Box" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.box.android.auth.AuthenticationActivity" android:theme="@style/Theme.Launcher" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="m.box.com" android:scheme="box-login"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:launchMode="singleTop" android:name="com.box.android.navigationmodernization.MainActivity" android:theme="@style/Theme.Box" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.box.android.activities.login.BoxThirdPartyAuthenticatorActivity" android:theme="@style/Theme.Box" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.box.android.action.AUTHENTICATE_VIA_BOX_APP"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.box.android.activities.RefreshDialogActivity" android:theme="@style/Theme.Box.Custom.Dialog.Alert"/>
+        <activity android:launchMode="singleTop" android:name="com.box.android.activities.login.StartScreenActivity" android:theme="@style/Theme.StartScreen" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.box.android.activities.AutoContentUploadPaywallActivity" android:theme="@style/Theme.Box.Custom.Dialog.Alert"/>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="com.box.android.activities.NotificationInterceptorActivity" android:stateNotNeeded="true" android:theme="@style/Theme.Box.NoDisplay"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:finishOnTaskLaunch="true" android:name="com.box.android.activities.BoxUrlsInterceptorActivity" android:stateNotNeeded="true" android:theme="@style/Theme.Box"/>
+        <activity-alias android:exported="true" android:name="com.box.android.BoxUrlsNotes" android:targetActivity="com.box.android.activities.BoxUrlsInterceptorActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:scheme="http"/>
+                <data android:host="*.box.com"/>
+                <data android:host="*.box.net"/>
+                <data android:host="*.box-gov.com"/>
+                <data android:pathPattern="/notes/..*"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:exported="true" android:name="com.box.android.BoxUrlsShared" android:targetActivity="com.box.android.activities.BoxUrlsInterceptorActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="*.box.com"/>
+                <data android:host="*.box.net"/>
+                <data android:host="*.box-gov.com"/>
+                <data android:pathPrefix="/shared/"/>
+                <data android:pathPrefix="/s/"/>
+                <data android:pathPrefix="/v/"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:exported="true" android:name="com.box.android.BoxUrlsWeb" android:targetActivity="com.box.android.activities.BoxUrlsInterceptorActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="*.box.com"/>
+                <data android:host="*.box.net"/>
+                <data android:host="*.box-gov.com"/>
+                <data android:pathPattern="/file/..*"/>
+                <data android:pathPattern="/folder/..*"/>
+                <data android:pathPattern="/collection/..*"/>
+                <data android:pathPattern="/hubs/..*"/>
+                <data android:pathPrefix="/notifications"/>
+                <data android:pathPrefix="/tasks/sent"/>
+                <data android:pathPrefix="/tasks/assigned"/>
+                <data android:pathPrefix="/recents"/>
+                <data android:pathPrefix="/favorites"/>
+                <data android:pathPrefix="/collections"/>
+                <data android:pathPrefix="/files/favorites"/>
+                <data android:pathPrefix="/diagnosis"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:launchMode="singleTop" android:name="com.box.android.activities.urlsinterceptor.router.FileRouterActivity" android:theme="@style/Theme.Box"/>
+        <activity android:launchMode="singleTop" android:name="com.box.android.activities.urlsinterceptor.router.HubDetailsRouterActivity" android:theme="@style/Theme.Box"/>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="false" android:finishOnTaskLaunch="true" android:name="com.box.android.activities.urlsinterceptor.BoxNotesInterceptorActivity" android:stateNotNeeded="true" android:theme="@style/Theme.Box"/>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="true" android:finishOnTaskLaunch="true" android:name="com.box.android.activities.urlsinterceptor.SharedLinkInterceptorActivity" android:stateNotNeeded="true" android:theme="@style/Theme.Box">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*" android:scheme="boxopenshared"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sharedlink"/>
+                <data android:scheme="boxapp"/>
+                <data android:scheme="boxemm"/>
+            </intent-filter>
+        </activity>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:name="com.box.android.activities.urlsinterceptor.SharedLinkStopScreenActivity" android:stateNotNeeded="true" android:theme="@style/Theme.Box"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:finishOnTaskLaunch="true" android:name="com.box.android.activities.IntentProcessorSend" android:stateNotNeeded="true" android:taskAffinity="com.box.android.activities.IntentProcessorSend" android:theme="@style/Theme.Box.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:name="android.content.Intent.FLAG_ACTIVITY_NO_ANIMATION"/>
+                <data android:mimeType="media/*"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="application/*"/>
+                <data android:mimeType="text/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:finishOnTaskLaunch="true" android:name="com.box.android.activities.IntentProcessorGetContent" android:stateNotNeeded="true" android:taskAffinity="com.box.android.activities.IntentProcessorGetContent" android:theme="@style/Theme.Box">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleTop" android:name="com.box.android.activities.filepicker.MainFilePicker" android:taskAffinity="com.box.android.activities.IntentProcessorGetContent" android:theme="@style/Theme.Box"/>
+        <activity android:name="com.box.android.browse.cpl.itempicker.ItemPickerActivity" android:theme="@style/Theme.Box"/>
+        <service android:enabled="true" android:exported="false" android:name="com.box.android.sync.AuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <service android:exported="false" android:name="com.box.android.services.FirebaseTokenHandlerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.box.android.services.FirebaseMessagingListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:icon="@null" android:label="@string/Box_Shortcut" android:name="com.box.android.activities.CreateBoxItemShortcutActivity" android:theme="@style/Theme.Box">
+            <intent-filter android:icon="@null" android:label="@string/Box_Shortcut" android:logo="@null">
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:name="com.box.android.activities.BoxItemShortcutActivity" android:taskAffinity="com.box.android.activities.BoxItemShortcutActivity" android:theme="@style/Theme.Box.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_MAIN"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*" android:scheme="boxopendirect"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="file"/>
+                <data android:host="folder"/>
+                <data android:scheme="boxapp"/>
+                <data android:scheme="boxemm"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.box.android.activities.urlsinterceptor.WebUrlsInterceptorActivity" android:theme="@style/Theme.Box.NoDisplay"/>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:name="com.box.android.activities.SwitchAccountActivity" android:stateNotNeeded="true" android:theme="@style/Theme.Box.Custom.Dialog.Alert"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.box.android.activities.settings.SettingsActivity" android:theme="@style/Theme.Box"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.box.brownfieldApi.featuresNavigator.activities.AiPromptLibraryActivity" android:theme="@style/Theme.Box"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.box.android.preview.preview.PreviewActivity" android:theme="@style/Theme.Box.Preview" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.box.android.preview.gallery.GalleryItemsActivity" android:theme="@style/Theme.Box.Preview" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.box.android.preview.previewtype.audio.playlist.PreviewPlaylistActivity" android:theme="@style/Theme.Box.Preview" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.box.android.preview.iteminformation.ItemInformationActivity" android:theme="@style/Theme.Box.Preview" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.box.android.preview.previousversion.PreviousVersionPreviewActivity" android:theme="@style/Theme.Box.Preview" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.box.android.base.presentation.watermarking.WatermarkingActivity" android:theme="@style/Theme.Box.Watermarking" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/box_sharesdk_title_share_link" android:launchMode="singleTop" android:name="com.box.android.activities.share.UsxShareActivity" android:theme="@style/Theme.Box.Secondary" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/box_sharesdk_shared_with" android:launchMode="singleTop" android:name="com.box.android.activities.share.UsxCollaborationsActivity" android:theme="@style/Theme.Box.Secondary" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/box_sharesdk_invite_collaborators" android:launchMode="singleTop" android:name="com.box.android.activities.share.UsxInviteCollaboratorsActivity" android:theme="@style/Theme.Box.Secondary" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:icon="@drawable/ic_capture_widget_icon" android:label="@string/box_capture" android:name="com.box.android.capture.activities.CreateCaptureShortcutActivity" android:theme="@style/Theme.Box">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:name="com.box.android.capture.activities.CaptureShortcutActivity" android:taskAffinity="com.box.android.capture.presentation.CaptureShortcutActivity" android:theme="@style/Theme.Box.NoDisplay"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.box.android.base.presentation.activities.NotificationPermissionRationaleActivity" android:theme="@style/Theme.Box"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleInstance" android:name="com.box.android.capture.activities.CaptureActivity" android:theme="@style/Theme.Box">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:host="capture" android:scheme="boxapp"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleInstance" android:name="sdk.pendo.io.activities.PendoGateActivity" android:permission="">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="pendo-8c7b3864"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="microphone" android:name="com.box.android.capture.audiorecording.RecorderService"/>
+        <service android:exported="false" android:name="com.box.android.activities.share.CopyLinkService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.box.android.activities.EmailSupportActivity" android:theme="@style/Theme.Box.Secondary"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.box.android.activities.BetaFeedbackActivity" android:theme="@style/Theme.Box" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:label="" android:launchMode="singleTop" android:name="com.box.android.base.presentation.activities.BoxIntuneMAMAuthActivity" android:theme="@style/Theme.Box"/>
+        <meta-data android:name="com.microsoft.intune.mam.aad.ClientID" android:value="dc4ae7e8-b3fa-41d6-aba3-8dc5d31d4339"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:name="com.microsoft.identity.client.BrowserTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.box.android" android:path="@string/app_sig" android:scheme="msauth"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="to.dualscreen" android:value="true"/>
+        <provider android:authorities="@string/commonProviderAuthority" android:exported="false" android:name="com.box.android.contentprovider.StubProvider" android:syncable="true"/>
+        <receiver android:exported="false" android:name="com.box.android.receiver.BoxDeviceConfigChangeInfoReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.box.android.receiver.BoxBootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.box.android.receiver.ReferralReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.box.android.receiver.CommentsReplyReceiver"/>
+        <receiver android:exported="false" android:name="com.box.android.receiver.DelayedNotificationReceiver"/>
+        <provider android:authorities="@string/docProviderAuthority" android:enabled="false" android:exported="true" android:grantUriPermissions="true" android:name="com.box.android.providers.BoxDocumentsProvider" android:permission="android.permission.MANAGE_DOCUMENTS">
+            <intent-filter>
+                <action android:name="android.content.action.DOCUMENTS_PROVIDER"/>
+            </intent-filter>
+        </provider>
+        <service android:name="com.box.android.services.JobRetryIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="com.box.android.browse.activities.FilterSearchResultsActivity" android:theme="@style/Theme.Box.Secondary"/>
+        <provider android:authorities="@string/fileProviderAuthority" android:exported="false" android:grantUriPermissions="true" android:name="com.box.android.common.providers.LegacyCompatFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <provider android:authorities="@string/uploadSyncProviderAuthority" android:enabled="true" android:exported="false" android:name="com.box.android.coreservices.jobmanager.contentproviders.UploadSyncContentProvider"/>
+        <receiver android:exported="false" android:name="com.box.android.services.JobRetryIntentService$JobRetryBroadcastReceiver"/>
+        <receiver android:exported="false" android:name="com.box.android.observability.DiagnosticsNotificationHandler"/>
+        <provider android:authorities="com.box.android.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.apollographql.apollo3.cache.normalized.sql.ApolloInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.box.android.preview.previewtype.audio.AudioPlayerService" android:stopWithTask="true">
+            <intent-filter>
+                <action android:name="androidx.media3.session.MediaSessionService"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="dev.testify.ComposableTestActivity" android:theme="@style/Theme.Box"/>
+        <provider android:authorities="com.box.android.app-startup-listener" android:exported="false" android:name="com.box.android.coreservices.observability.appstart.helpers.ClassLoaderListener"/>
+        <activity android:name="com.box.android.contentpicker.ContentPickerActivity" android:theme="@style/Theme.Box.NoDisplay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.box.android.boxai.AiCenterActivity" android:theme="@style/Theme.Box.NoDisplay"/>
+        <activity android:exported="false" android:finishOnTaskLaunch="false" android:launchMode="singleTop" android:name="com.box.android.updates.force.ui.ForceUpdateActivity" android:theme="@style/Theme.Box"/>
+        <activity android:name="com.box.android.tasks.addtask.activity.AddTaskActivity" android:theme="@style/Theme.Box.NoDisplay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleInstance" android:name="com.box.androidsdk.content.auth.BlockedIPErrorActivity"/>
+        <provider android:authorities="com.box.android.box.androidsdk.provider" android:exported="false" android:name="com.box.androidsdk.content.utils.BoxContentProvider"/>
+        <provider android:authorities="com.box.android.FileSystemFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="expo.modules.filesystem.FileSystemFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_system_provider_paths"/>
+        </provider>
+        <meta-data android:name="org.unimodules.core.AppLoader#react-native-headless" android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader"/>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="true"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.pspdfkit.document.printing.PrintActivity"/>
+        <provider android:authorities="com.box.android.com.pspdfkit.initialization.InitializationProvider" android:exported="false" android:name="com.pspdfkit.initialization.InitializationProvider"/>
+        <provider android:authorities="com.box.android.pdf.assets" android:exported="false" android:name="com.pspdfkit.media.AssetsContentProvider"/>
+        <provider android:authorities="com.box.android.pdf.share" android:exported="false" android:grantUriPermissions="true" android:name="com.pspdfkit.document.sharing.DocumentSharingProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/pspdf_file_provider_paths"/>
+        </provider>
+        <activity android:name="com.geniusscansdk.scanflow.ScanActivity" android:theme="@style/SDKTheme"/>
+        <activity android:name="com.geniusscansdk.readablecodeflow.ReadableCodeScanActivity" android:theme="@style/SDKTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.microsoft.identity.common.internal.providers.oauth2.AuthorizationActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="standard" android:name="com.microsoft.identity.common.internal.providers.oauth2.CurrentTaskAuthorizationActivity"/>
+        <activity android:exported="false" android:launchMode="standard" android:name="com.microsoft.identity.client.helper.BrokerHelperActivity"/>
+        <activity android:exported="true" android:name="com.microsoft.identity.client.CurrentTaskBrowserTabActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.microsoft.identity.common.internal.providers.oauth2.SilentAuthorizationActivity" android:theme="@style/TransparentActivityTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.microsoft.identity.common.internal.broker.BrokerActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.microsoft.identity.common.internal.broker.InstallCertActivityLauncher" android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="sdk.pendo.io.activities.PendoGuideVisualActivity" android:theme="@style/Base.Theme.PendoTheme"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.box.android.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <service android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseConfigLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.box.android.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <service android:exported="true" android:label="" android:name="com.microsoft.intune.mam.client.notification.MAMNotificationReceiverService"/>
+        <service android:exported="false" android:label="" android:name="com.microsoft.intune.mam.client.service.MAMBackgroundService"/>
+        <service android:exported="false" android:label="" android:name="com.microsoft.intune.mam.client.service.MAMBackgroundJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.microsoft.intune.mam.client.service.MAMBackgroundReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:multiprocess="true" android:name="com.microsoft.intune.mam.client.app.offline.OfflineStartupBlockedActivity"/>
+        <activity android:exported="false" android:multiprocess="true" android:name="com.microsoft.intune.mam.client.app.offline.OfflineRestartRequiredActivity"/>
+        <activity android:exported="false" android:multiprocess="true" android:name="com.microsoft.intune.mam.client.app.startup.MAMStartupActivity"/>
+        <activity android:exported="false" android:name="com.microsoft.intune.mam.client.app.resolver.MAMResolverActivity" android:taskAffinity="" android:theme="@style/MAMDialogTheme"/>
+        <activity android:exported="false" android:multiprocess="true" android:name="com.microsoft.intune.mam.client.app.offline.OfflineInstallCompanyPortalDialogActivity" android:theme="@style/MAMDialogTheme"/>
+        <activity android:exported="false" android:name="com.microsoft.intune.mam.client.app.offline.OfflineNotifyWipeActivity"/>
+        <activity android:exported="false" android:label="ComplianceBlock" android:name="com.microsoft.intune.mam.client.app.startup.MAMComplianceBlockActivity"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <activity android:excludeFromRecents="true" android:label="@string/yubikit_otp_activity_title" android:name="com.yubico.yubikit.android.ui.OtpActivity" android:theme="@style/YubiKitPromptDialogTheme"/>
+        <activity android:excludeFromRecents="true" android:label="@string/yubikit_prompt_activity_title" android:name="com.yubico.yubikit.android.ui.YubiKeyPromptActivity" android:theme="@style/YubiKitPromptDialogTheme"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

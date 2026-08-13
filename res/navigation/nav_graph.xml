@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph" app:startDestination="@id/browseFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="BrowseFragment" android:name="com.box.android.browse.cpl.browse.BrowseFragment" android:id="@id/browseFragment">
+        <argument android:name="storeKey" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:label="CollectionsFragment" android:name="com.box.android.collections.presentation.fragments.CollectionItemsFragment" android:id="@id/collectionsFragment">
+        <argument android:name="storeKey" app:argType="string" app:nullable="true" />
+        <argument android:name="init_collection_id" app:argType="string" app:nullable="false" />
+        <argument android:name="init_item_name" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:label="SearchFragment" android:name="com.box.android.browse.fragments.SearchFragment" android:id="@id/searchFragment">
+        <argument android:name="argUserId" app:argType="string" app:nullable="false" />
+        <argument android:name="outQuery" app:argType="string" app:nullable="true" />
+        <argument android:name="SearchFragment.ExtraParentFolder" app:argType="com.box.androidsdk.content.models.BoxFolder" app:nullable="false" />
+        <argument android:name="SearchFragment.SearchFilters" app:argType="com.box.android.browse.models.BoxSearchFilters" app:nullable="true" />
+    </fragment>
+</navigation>

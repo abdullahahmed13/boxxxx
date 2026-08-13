@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?contentBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/autoContentUploadContainer" style="@style/Options_ItemContainer">
+        <TextView android:id="@id/autoUploadMainText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Auto_photo_upload" android:layout_weight="1.0" android:layout_toLeftOf="@id/autoUploadMainSwitch" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/Options_ItemText" />
+        <TextView android:id="@id/autoUploadMainDescription" android:text="@string/Auto_photo_upload_subtext" android:layout_toLeftOf="@id/autoUploadMainSwitch" android:layout_below="@id/autoUploadMainText" android:layout_alignParentLeft="true" style="@style/Options_ItemSubText" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/autoUploadMainSwitch" style="@style/Options_Switch" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/autoContentUploadOptions" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="0.0dip">
+        <ImageView style="@style/Options_ItemDivider" />
+        <RelativeLayout android:id="@id/autoUploadMeteredSwitchContainer" style="@style/Options_ItemContainer">
+            <TextView android:id="@id/meteredUploadMainText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/Metered_upload" android:layout_toLeftOf="@id/autoUploadMeteredSwitch" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/Options_ItemText" />
+            <TextView android:id="@id/meteredUploadMainDescription" android:text="@string/Metered_upload_subtext" android:layout_toLeftOf="@id/autoUploadMeteredSwitch" android:layout_below="@id/meteredUploadMainText" android:layout_alignParentLeft="true" style="@style/Options_ItemSubText" />
+            <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/autoUploadMeteredSwitch" style="@style/Options_Checkbox" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/localFolderToMonitorPathContainer" android:layout_marginTop="8.0dip" style="@style/Options_ItemContainer">
+            <TextView android:id="@id/localFolderToMonitor" android:text="@string/Local_folder_to_monitor" style="@style/Options_ItemText" />
+            <TextView android:textColor="?colorAccent" android:id="@id/localFolderToMonitorPath" style="@style/Options_ItemSubText" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/remoteFolderToMonitorPathContainer" android:layout_marginTop="8.0dip" style="@style/Options_ItemContainer">
+            <TextView android:id="@id/remoteFolderToMonitor" android:text="@string/Remote_folder_to_monitor" style="@style/Options_ItemText" />
+            <TextView android:textColor="?colorAccent" android:id="@id/remoteFolderToMonitorPath" style="@style/Options_ItemSubText" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@id/notifyUploadSwitchContainer" android:layout_marginTop="8.0dip" style="@style/Options_ItemContainer">
+            <TextView android:id="@id/notifyUploadDescription" android:layout_marginTop="8.0dip" android:text="@string/Notify_me_when_files_are_uploading" android:layout_toLeftOf="@id/notifyUploadSwitch" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/Options_ItemText" />
+            <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/notifyUploadSwitch" style="@style/Options_Checkbox" />
+            <TextView android:textColor="?notification" android:id="@id/collabFolderWarning" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/Files_are_automatically_uploaded_into_a_collaborated_folder" android:layout_toLeftOf="@id/notifyUploadSwitch" android:layout_below="@id/notifyUploadDescription" android:layout_alignParentLeft="true" style="@style/Options_ItemSubText" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

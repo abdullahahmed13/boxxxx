@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.geniusscansdk.camera.PreviewSurfaceView android:id="@id/preview_surface_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.geniusscansdk.camera.realtime.OverlayView android:id="@id/overlay_surface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/preview_surface_view" android:layout_alignBottom="@id/preview_surface_view" android:layout_alignStart="@id/preview_surface_view" android:layout_alignEnd="@id/preview_surface_view" />
+</RelativeLayout>

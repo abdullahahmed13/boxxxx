@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Box.Normal.20sp.Content" android:id="@id/ftuxTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center" android:id="@id/ftuxImage" android:layout_width="@dimen/ftux_img_width" android:layout_height="@dimen/ftux_img_height" android:layout_marginTop="@dimen/dialog_space_between_content" android:scaleType="center" />
+    <TextView android:textAppearance="@style/TextAppearance.Box.Normal.14sp.ContentSecondary" android:textSize="16.0sp" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/pspdf__measurement_value_text_size" android:textColor="@color/pspdf__onPrimaryLight" android:id="@id/pspdf__measurement_value_popup_text" android:background="@drawable/pspdf__rounded_rect_measurements" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:minWidth="60.0dip" android:singleLine="true" android:textAlignment="center" android:elevation="@dimen/pspdf__toolbar_elevation" android:paddingHorizontal="5.0dip" android:paddingVertical="2.0dip" />
+</LinearLayout>

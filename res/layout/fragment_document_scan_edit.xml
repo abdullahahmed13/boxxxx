@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:background="?appBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/scanned_pages" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/bottom_bar" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" app:layout_constraintBottom_toBottomOf="@id/scanned_pages" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <include android:id="@id/page_counter" layout="@layout/box_previewsdk_view_page_number" />
+    </FrameLayout>
+    <com.geniusscansdk.ui.BorderDetectionImageView android:id="@id/border_detection_image" android:background="?appBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/bottom_bar" app:layout_constraintTop_toTopOf="parent" />
+    <include app:layout_constraintBottom_toBottomOf="parent" layout="@layout/fragment_document_scan_edit_bottom_bar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

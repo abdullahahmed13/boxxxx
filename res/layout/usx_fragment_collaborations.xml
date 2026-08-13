@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/usx_fragment_collaborations_0" android:background="?appBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/collaboratorsList" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textAppearance="@style/TextAppearance.Box.Normal.18sp.App" android:gravity="center_horizontal" android:layout_gravity="top" android:id="@id/no_collaborators_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/box_sharesdk_horizontal_margin" android:text="@string/box_sharesdk_no_collaborators" />
+</LinearLayout>

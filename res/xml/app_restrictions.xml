@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<restrictions
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <restriction android:description="@string/restriction_user_email_description" android:title="@string/restriction_user_email_title" android:key="UserEmail" android:defaultValue="" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_public_id_description" android:title="@string/restriction_public_id_title" android:key="PublicId" android:defaultValue="" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_management_id_description" android:title="@string/restriction_management_id_title" android:key="ManagementId" android:defaultValue="" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_emm_name_description" android:entries="@array/emm_entries_array" android:title="@string/restriction_emm_name_title" android:key="EmmName" android:defaultValue="" android:entryValues="@array/emm_values_array" android:restrictionType="choice" />
+    <restriction android:description="@string/restriction_billing_id_description" android:title="@string/restriction_billing_id_title" android:key="BillingId" android:defaultValue="" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_version_description" android:title="@string/restriction_version_title" android:key="Version" android:defaultValue="1" android:restrictionType="hidden" />
+    <restriction android:description="@string/restriction_intune_enterprise_description" android:title="@string/restriction_intune_enterprise_title" android:key="Intune Enterprise" android:defaultValue="0" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_intune_upn_description" android:title="@string/restriction_intune_upn_title" android:key="userprincipalname" android:defaultValue="" android:restrictionType="string" />
+    <restriction android:description="@string/restriction_fedramp_high_description" android:title="@string/restriction_fedramp_high_title" android:key="fedramp_high" android:defaultValue="false" android:restrictionType="bool" />
+</restrictions>

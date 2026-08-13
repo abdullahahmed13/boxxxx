@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="16.0dip" android:width="16.0dip" android:viewportWidth="16.0" android:viewportHeight="16.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ff909090" android:pathData="M14 11c.552 0 1 .448 1 1v2c0 .552-.448 1-1 1h-2c-.552 0-1-.448-1-1v-2c0-.552.448-1 1-1h2zm-5 0c.552 0 1 .448 1 1v2c0 .552-.448 1-1 1H7c-.552 0-1-.448-1-1v-2c0-.552.448-1 1-1h2zm-5 0c.552 0 1 .448 1 1v2c0 .552-.448 1-1 1H2c-.552 0-1-.448-1-1v-2c0-.552.448-1 1-1h2zm10-5c.552 0 1 .448 1 1v2c0 .552-.448 1-1 1h-2c-.552 0-1-.448-1-1V7c0-.552.448-1 1-1h2zM9 6c.552 0 1 .448 1 1v2c0 .552-.448 1-1 1H7c-.552 0-1-.448-1-1V7c0-.552.448-1 1-1h2zM4 6c.552 0 1 .448 1 1v2c0 .552-.448 1-1 1H2c-.552 0-1-.448-1-1V7c0-.552.448-1 1-1h2zm10-5c.552 0 1 .448 1 1v2c0 .552-.448 1-1 1h-2c-.552 0-1-.448-1-1V2c0-.552.448-1 1-1h2zM9 1c.552 0 1 .448 1 1v2c0 .552-.448 1-1 1H7c-.552 0-1-.448-1-1V2c0-.552.448-1 1-1h2zM4 1c.552 0 1 .448 1 1v2c0 .552-.448 1-1 1H2c-.552 0-1-.448-1-1V2c0-.552.448-1 1-1h2z" android:fillType="evenOdd" />
+</vector>

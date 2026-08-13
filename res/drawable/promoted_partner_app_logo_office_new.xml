@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="40.0dip" android:width="40.0dip" android:viewportWidth="60.0" android:viewportHeight="66.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$promoted_partner_app_logo_office_new__0" android:pathData="M24.13,1.54l-0.34,0.2a12,12 0,0 0,-1.51 1.08l1,-0.68h8.25L33,13.5l-7.5,7.5 -7.5,5.21v6a12,12 0,0 0,5.79 10.27l7.9,4.78L15,57h-3.22l-6,-3.63A12,12 0,0 1,0 43.1L0,22.89a12,12 0,0 1,5.79 -10.27l18,-10.89Z" />
+    <path android:fillColor="@drawable/$promoted_partner_app_logo_office_new__1" android:pathData="M24.13,1.54l-0.34,0.2a12,12 0,0 0,-1.51 1.08l1,-0.68h8.25L33,13.5l-7.5,7.5 -7.5,5.21v6a12,12 0,0 0,5.79 10.27l7.9,4.78L15,57h-3.22l-6,-3.63A12,12 0,0 1,0 43.1L0,22.89a12,12 0,0 1,5.79 -10.27l18,-10.89Z" />
+    <path android:fillColor="@drawable/$promoted_partner_app_logo_office_new__2" android:pathData="M42,25.5v6.72a12,12 0,0 1,-5.79 10.27l-18,10.9a12,12 0,0 1,-12 0.24l17.58,10.64a12,12 0,0 0,12.43 0l18,-10.9A12,12 0,0 0,60 43.1v-4.85L58.5,36Z" />
+    <path android:fillColor="@drawable/$promoted_partner_app_logo_office_new__3" android:pathData="M42,25.5v6.72a12,12 0,0 1,-5.79 10.27l-18,10.9a12,12 0,0 1,-12 0.24l17.58,10.64a12,12 0,0 0,12.43 0l18,-10.9A12,12 0,0 0,60 43.1v-4.85L58.5,36Z" />
+    <path android:fillColor="@drawable/$promoted_partner_app_logo_office_new__4" android:pathData="M54.21,12.62l-18,-10.89a12,12 0,0 0,-12.06 -0.21l-0.36,0.22A12,12 0,0 0,18 12v14.23l5.79,-3.5a12,12 0,0 1,12.42 0l18,10.89A12,12 0,0 1,60 43.5q0,-0.2 0,-0.39L60,22.89A12,12 0,0 0,54.21 12.62Z" />
+    <path android:fillColor="@drawable/$promoted_partner_app_logo_office_new__5" android:pathData="M54.21,12.62l-18,-10.89a12,12 0,0 0,-12.06 -0.21l-0.36,0.22A12,12 0,0 0,18 12v14.23l5.79,-3.5a12,12 0,0 1,12.42 0l18,10.89A12,12 0,0 1,60 43.5q0,-0.2 0,-0.39L60,22.89A12,12 0,0 0,54.21 12.62Z" />
+    <path android:fillColor="@drawable/$promoted_partner_app_logo_office_new__6" android:pathData="M0,43.5Z" />
+    <path android:fillColor="@drawable/$promoted_partner_app_logo_office_new__7" android:pathData="M0,43.5Z" />
+</vector>

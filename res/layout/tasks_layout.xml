@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/box_browsesdk_swipe_reresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/box_browsesdk_items_recycler_view" android:background="?contentBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/empty_folder_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/empty_padding_side" android:paddingTop="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/empty_padding_side" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:id="@id/empty_folder_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/empty_text_header_margin" android:layout_marginBottom="@dimen/empty_text_header_margin" android:src="@drawable/ic_tasks140" android:scaleType="fitCenter" android:alpha="@dimen/empty_image_alpha" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_folder_text_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/TextAppearance.Box.Medium.15sp.App" android:gravity="center_horizontal" android:id="@id/empty_folder_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_my_tasks_text" />
+                <TextView android:textAppearance="@style/TextAppearance.Box.Normal.12sp.AppSecondary" android:gravity="center_horizontal" android:id="@id/empty_folder_subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/empty_subtext_padding" />
+            </LinearLayout>
+            <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="2.0" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar android:layout_gravity="center" android:id="@id/box_browsesdk_progress_bar" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:indeterminate="true" />
+</FrameLayout>

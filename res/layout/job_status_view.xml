@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/circular_touch_selector" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/progressBar" android:layout_width="@dimen/job_progress_bar_size" android:layout_height="@dimen/job_progress_bar_size" android:max="100" android:indeterminate="false" android:indeterminateOnly="false" android:progressDrawable="@drawable/job_progress_drawable" android:rotation="270.0" android:min="0" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" style="?android:progressBarStyle" />
+    <ImageView android:id="@id/job_progress_status" android:background="@null" android:clickable="false" android:layout_width="24.0dip" android:layout_height="24.0dip" app:layout_constraintBottom_toBottomOf="@id/progressBar" app:layout_constraintEnd_toEndOf="@id/progressBar" app:layout_constraintStart_toStartOf="@id/progressBar" app:layout_constraintTop_toTopOf="@id/progressBar" app:tint="?contentPrimary" />
+</androidx.constraintlayout.widget.ConstraintLayout>

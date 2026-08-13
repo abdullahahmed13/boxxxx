@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menu_notification_collaborations" android:title="@string/allow_collabs_push_notification" />
+    <item android:id="@id/menu_notification_comments" android:title="@string/allow_comments_push_notification" />
+    <item android:id="@id/menu_notification_updates" android:title="@string/allow_updates_push_notification" />
+    <item android:id="@id/menu_notification_show_all" android:title="@string/Show_All" />
+</menu>

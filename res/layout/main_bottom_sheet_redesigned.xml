@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.box.android.base.presentation.views.LinearLayoutWithOverlayWarning android:orientation="vertical" android:id="@id/bottom_sheet" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center_horizontal" android:background="@drawable/bg_bottom_sheet_drag_handle" android:layout_width="32.0dip" android:layout_height="4.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:paddingBottom="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bottom_sheet_margin_bottom" />
+</com.box.android.base.presentation.views.LinearLayoutWithOverlayWarning>

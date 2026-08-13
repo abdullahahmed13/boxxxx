@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/pspdf__content_editing_create_textblock_button_container" android:visibility="invisible" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:padding="8.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end" android:id="@id/pspdf__content_editing_create_textblock_fab_main_page" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pspdf__ic_create_textblock" android:importantForAccessibility="no" app:elevation="4.0dip" app:shapeAppearanceOverlay="@style/PSPDFKit.FabStyle" />
+    </FrameLayout>
+    <FrameLayout android:padding="8.0dip" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end" android:id="@id/pspdf__content_editing_create_textblock_fab_second_page" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pspdf__ic_create_textblock" android:importantForAccessibility="no" app:elevation="4.0dip" app:shapeAppearanceOverlay="@style/PSPDFKit.FabStyle" />
+    </FrameLayout>
+</LinearLayout>

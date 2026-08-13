@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?contentBackground" android:paddingTop="@dimen/dialog_padding" android:paddingBottom="@dimen/dialog_space_between_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dialog_padding" android:paddingEnd="@dimen/dialog_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="left|center" android:id="@id/dialog_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textIsSelectable="false" style="@style/TextAppearance.Box.Normal.14sp.Content" />
+    <com.box.android.base.presentation.views.OKCancelView android:id="@id/okCancelView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dialog_button_margin_top" />
+</LinearLayout>

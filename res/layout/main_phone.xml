@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:background="?topBarBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/htab_appbar" android:background="?topBarBackground" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="@dimen/toolbar_elevation" app:liftOnScroll="false">
+        <FrameLayout android:id="@id/main_toolbar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@id/filesfragmentembedded1" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <ListView android:id="@id/recentSearchesListView" android:background="#55000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <RelativeLayout android:id="@id/bottom_optionals_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:layout_behavior="com.box.android.base.views.behavior.ScrollDisappearBehavior">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/snackbar_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/fab_menu_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/floating_action_menu_container_size" android:layout_above="@id/bottom_optionals_container" android:layout_alignParentBottom="true" app:layout_behavior="com.box.android.base.views.behavior.ScrollDisappearBehavior">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_optionals_container" android:layout_alignParentBottom="true" layout="@layout/fab_menu" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

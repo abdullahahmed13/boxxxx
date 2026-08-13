@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_link_grey_24dp" android:id="@id/menu_copy_link" android:title="@string/LO_Copy_Link" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_collections_star" android:id="@id/menu_collections" android:title="@string/Collections" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_pencil24" android:id="@id/menu_rename" android:title="@string/Rename" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_copy24_android" android:id="@id/menu_copy_or_move" android:title="@string/copy_move" android:iconTint="?contentSecondary" />
+    <item android:icon="@drawable/ic_trash24" android:id="@id/menu_delete" android:title="@string/LS_Delete" android:iconTint="?contentSecondary" />
+</menu>

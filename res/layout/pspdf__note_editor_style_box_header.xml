@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pspdf__note_item_style_box_header" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/pspdf__note_item_style_box_preview_image" android:padding="12.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_alignParentTop="true" android:layout_alignParentStart="true" app:tint="@color/pspdf__onSurfaceVariantLight" />
+    <com.pspdfkit.ui.LocalizedTextView android:textSize="18.0sp" android:textColor="@color/pspdf__outlineLight" android:id="@id/pspdf__note_item_style_box_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pspdf__note_editor_style" android:layout_centerVertical="true" android:fontFamily="sans-serif-medium" android:layout_marginStart="14.0dip" android:layout_toEndOf="@id/pspdf__note_item_style_box_preview_image" />
+    <ImageView android:id="@id/pspdf__note_item_style_box_chevron" android:padding="12.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/pspdf__ic_chevron_up" android:layout_centerVertical="true" android:contentDescription="@string/pspdf__note_editor_style" android:layout_alignParentEnd="true" app:tint="@color/pspdf__onSurfaceVariantLight" />
+    <TextView android:id="@id/pspdf__note_item_style_box_current_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/pspdf__note_item_style_box_chevron" />
+</RelativeLayout>

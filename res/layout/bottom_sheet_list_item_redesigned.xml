@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="start" android:background="?contentBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:minHeight="56.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/icon_container" android:background="@drawable/bg_bottom_sheet_icon_circle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+        <ImageView android:layout_gravity="center" android:id="@id/item_icon" android:focusable="false" android:clickable="false" android:layout_width="18.0dip" android:layout_height="18.0dip" />
+    </FrameLayout>
+    <TextView android:textAppearance="@style/TextAppearance.Box.Normal.16sp.App" android:ellipsize="end" android:id="@id/title" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:layout_marginStart="12.0dip" android:layout_marginEnd="16.0dip" android:layout_toStartOf="@id/loading_spinner" android:layout_toEndOf="@id/icon_container" />
+    <ProgressBar android:id="@id/loading_spinner" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="?android:progressBarStyleSmall" />
+</RelativeLayout>

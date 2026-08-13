@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="?contentBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.box.android.base.presentation.views.ToolbarWithOverlayWarning android:id="@id/toolbarSupport" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/toolbar_elevation" app:popupTheme="@style/Theme.Box.Action.Popup" app:titleTextAppearance="@style/TextAppearance.Box.Bold.20sp.TopBarPrimary" />
+        <com.google.android.material.textfield.TextInputLayout android:theme="@style/ThemeOverlay.Box.EditText.Outline" android:id="@id/input_layout_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin" android:hint="@string/email_support_hint_text" style="@style/Widget.Box.EditText.Outline">
+            <com.google.android.material.textfield.TextInputEditText android:textAppearance="@style/TextAppearance.Box.Normal.16sp.Content" android:gravity="start|top" android:id="@id/msgBody" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="8" android:inputType="textMultiLine" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.AppCompatCheckBox android:textAppearance="@style/TextAppearance.Box.Normal.16sp.Content" android:id="@id/attachLogFilesCheckBox" android:checked="true" android:text="@string/Attach_log_files" android:layout_marginStart="13.0dip" style="@style/Options_Checkbox" />
+        <TextView android:textAppearance="@style/TextAppearance.Box.Normal.12sp.ContentSecondary" android:id="@id/attachLogFileSubtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Attach_log_files_subtext" android:maxLines="3" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" android:layout_alignParentStart="true" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

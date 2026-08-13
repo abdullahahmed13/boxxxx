@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/TextAppearance.Box.Normal.14sp.App" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/breadcrumb_textview" android:background="@drawable/breadcrumb_spinner_button_states" android:layout_width="fill_parent" android:layout_height="40.0dip" android:maxLines="1" android:paddingHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

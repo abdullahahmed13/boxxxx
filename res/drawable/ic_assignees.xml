@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="?assigneeButtonImageBackground" android:pathData="M12,12m-11.5,0a11.5,11.5 0,1 1,23 0a11.5,11.5 0,1 1,-23 0" android:strokeColor="?assigneeButtonBackground" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="?assigneeButtonImageBackground" android:pathData="M9.857,9.656a2.143,2.188 0,1 0,4.286 0a2.143,2.188 0,1 0,-4.286 0z" android:strokeColor="?assigneeButtonImage" android:strokeWidth="1.667" android:fillType="evenOdd" />
+    <path android:pathData="M7.625,16.196C7.625,16.196 9.264,14.054 12,14.054C14.736,14.054 16.375,16.196 16.375,16.196" android:strokeColor="?assigneeButtonImage" android:strokeWidth="1.667" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillType="evenOdd" />
+</vector>

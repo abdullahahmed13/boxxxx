@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_search" android:id="@id/folder_search_menu_item" android:title="@string/Search_this_folder" app:actionViewClass="com.box.android.browse.views.AppSearchView" app:showAsAction="always" />
+    <item android:id="@id/transfers_menu_item" android:title="@string/transfers" app:actionLayout="@layout/layout_menu_transfers_legacy" app:showAsAction="always" />
+</menu>

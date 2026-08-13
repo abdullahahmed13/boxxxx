@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="12.0dip" android:width="14.0dip" android:viewportWidth="14.0" android:viewportHeight="12.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:name="rotationGroup" android:pivotX="7.0" android:scaleX="-1.0">
+        <path android:fillColor="#ff909090" android:pathData="M7.802,12C8.131,12 8.398,11.862 8.72,11.567L13.664,6.716C13.918,6.482 14,6.22 14,6C14,5.773 13.918,5.518 13.664,5.278L8.72,0.475C8.364,0.138 8.138,0 7.815,0C7.335,0 7,0.378 7,0.84V3H6.647C2.05,3.001 0,6.206 0,10.995C0,11.642 0.336,12 0.713,12C1.014,12 1.316,11.91 1.549,11.477C2.645,9.42 4.187,9.001 6.647,9.001H7V11.201C7,11.663 7.336,12 7.802,12Z" android:fillType="evenOdd" />
+    </group>
+</vector>

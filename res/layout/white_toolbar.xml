@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar android:background="?topBarBackground" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/toolbar_elevation" android:outlineProvider="bounds" app:popupTheme="@style/Theme.Box.Action.Popup" app:titleTextAppearance="@style/TextAppearance.Box.Medium.20sp.TopBarPrimary.LetterSpacing01"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

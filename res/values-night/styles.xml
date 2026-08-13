@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.SplashScreen.DayNight" parent="@style/Base.Theme.SplashScreen" />
+    <style name="Theme.AppCompat.DayNight" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="@style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert" />
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="@style/Theme.AppCompat.Dialog.MinWidth" />
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge" />
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar" />
+    <style name="Theme.Box" parent="@style/Theme.Box.Common">
+        <item name="android:textColorSecondary">@color/box_blue_50</item>
+        <item name="android:windowBackground">@color/box_gray</item>
+        <item name="android:statusBarColor">@color/box_dark_gray_3</item>
+        <item name="android:navigationBarColor">@color/box_dark_gray_3</item>
+        <item name="actionMenuTextColor">@color/box_blue_50</item>
+        <item name="appBackground">@color/black</item>
+        <item name="appPrimary">@color/white</item>
+        <item name="appSecondary">@color/box_gray_40</item>
+        <item name="assigneeButtonBackground">@color/box_gray_50</item>
+        <item name="assigneeButtonImage">@color/box_gray_50</item>
+        <item name="assigneeButtonImageBackground">@color/box_gray</item>
+        <item name="assigneeButtonText">@color/box_gray</item>
+        <item name="colorAccent">@color/box_blue_50</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSurface">@color/box_gray_80</item>
+        <item name="colorOnSurfaceVariant">@color/box_gray_50</item>
+        <item name="colorOutline">@color/box_gray_50</item>
+        <item name="colorPrimary">@color/box_blue_50</item>
+        <item name="colorPrimaryContainer">@color/box_gray_80</item>
+        <item name="colorSecondaryContainer">@color/box_gray_80</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="contentBackground">@color/box_gray</item>
+        <item name="contentBackgroundSecondary">@color/box_dark_gray_3</item>
+        <item name="contentBackgroundSelected">@color/box_gray_80</item>
+        <item name="contentDivider">@color/box_dark_gray_3</item>
+        <item name="contentPrimary">@color/white</item>
+        <item name="contentSecondary">@color/box_gray_40</item>
+        <item name="fileNotFound">@color/yellorange</item>
+        <item name="itemListingBadgeBackground">@color/box_dark_gray_3</item>
+        <item name="itemListingBadgeContent">@color/box_gray_40</item>
+        <item name="mainActiveControl">@color/box_blue_50</item>
+        <item name="mainActiveControlBackground">@color/box_dark_blue_20</item>
+        <item name="mainActiveControlTrack">@color/box_blue_50_alpha_20</item>
+        <item name="mainInactiveControl">@color/box_gray_50</item>
+        <item name="mainInactiveControlSecondary">@color/box_gray_50</item>
+        <item name="notification">@color/watermelon_red</item>
+        <item name="notificationPrimary">@color/white</item>
+        <item name="notification_bg">@color/watermelon_red_10</item>
+        <item name="overlayDim">@color/black_80</item>
+        <item name="popupBackground">@color/box_gray</item>
+        <item name="popupPrimary">@color/white</item>
+        <item name="popupSecondary">@color/box_gray_40</item>
+        <item name="popupTertiary">@color/box_gray_40</item>
+        <item name="searchBackground">@color/box_gray_80</item>
+        <item name="searchControl">@color/box_blue_50</item>
+        <item name="searchPrimary">@color/white</item>
+        <item name="searchSecondary">@color/box_gray_40</item>
+        <item name="selectedItem">@color/yellorange</item>
+        <item name="snackBarAction">@color/box_gray_62</item>
+        <item name="snackBarPrimary">@color/box_gray</item>
+        <item name="splashScreenBackground">@color/box_dark_gray_3</item>
+        <item name="splashScreenButtonBackground">@color/white_87</item>
+        <item name="splashScreenPrimary">@color/box_dark_gray_3</item>
+        <item name="splashScreenSecondary">@color/white</item>
+        <item name="splashScreenTertiary">@color/box_gray_30</item>
+        <item name="statusDone">@color/green_light</item>
+        <item name="statusProgress">@color/yellow</item>
+        <item name="topBarActionModeBackground">@color/box_gray</item>
+        <item name="topBarActionModeBackgroundOldHomeScreen">@color/box_dark_gray_3</item>
+        <item name="topBarActionModeControl">@color/white</item>
+        <item name="topBarActionModeText">@color/white</item>
+        <item name="topBarBackground">@color/box_dark_gray_3</item>
+        <item name="topBarControl">@color/box_blue_50</item>
+        <item name="topBarDisabled">@color/box_gray_50</item>
+        <item name="topBarInactive">@color/box_gray_50</item>
+        <item name="topBarPrimary">@color/white</item>
+        <item name="topBarSecondary">@color/box_gray_40</item>
+        <item name="topBarSpinnerBackground">@color/box_gray_80</item>
+        <item name="topLayerBackground">@color/box_dark_gray_3</item>
+        <item name="topLayerInteractiveBackground">@color/box_gray_80</item>
+        <item name="topLayerInteractiveSecondary">@color/box_gray_40</item>
+        <item name="topLayerPrimary">@color/white</item>
+        <item name="topLayerSecondary">@color/box_gray_50</item>
+    </style>
+    <style name="Theme.Box.BottomSheet" parent="@style/Theme.Box.Secondary">
+        <item name="android:textColorSecondary">@color/box_blue_50</item>
+        <item name="actionModeStyle">@style/Widget.Box.ActionMode.Preview</item>
+        <item name="topBarControl">@color/box_blue_50</item>
+    </style>
+    <style name="Theme.Box.Custom.Dialog.Alert" parent="@style/Theme.Material3.DayNight.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/default_dialog_background</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/Widget.Button.Dialog</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/Widget.Button.Dialog</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/Widget.Button.Dialog</item>
+        <item name="colorAccent">@color/box_blue_50</item>
+        <item name="colorPrimary">@color/box_blue_50</item>
+        <item name="contentBackground">@color/box_gray</item>
+        <item name="contentPrimary">@color/white</item>
+        <item name="contentSecondary">@color/box_gray_40</item>
+        <item name="mainActiveControl">@color/box_blue_50</item>
+        <item name="mainInactiveControl">@color/box_gray_50</item>
+        <item name="mainInactiveControlSecondary">@color/box_gray_50</item>
+        <item name="notification">@color/watermelon_red</item>
+        <item name="notification_bg">@color/watermelon_red_10</item>
+        <item name="windowFixedWidthMajor">60.000004%</item>
+        <item name="windowFixedWidthMinor">85.0%</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Box.Dialog.Alert" parent="@style/ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.Button.Dialog</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.Button.Dialog</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.Button.Dialog</item>
+        <item name="colorAccent">@color/box_blue_50</item>
+        <item name="colorControlNormal">@color/box_gray_50</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorOnSurfaceVariant">@color/box_gray_40</item>
+        <item name="colorPrimary">@color/box_blue_50</item>
+        <item name="colorSurfaceContainerHigh">@color/box_gray</item>
+        <item name="contentBackground">@color/box_gray</item>
+        <item name="contentPrimary">@color/white</item>
+        <item name="contentSecondary">@color/box_gray_40</item>
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="mainActiveControl">@color/box_blue_50</item>
+        <item name="mainInactiveControl">@color/box_gray_50</item>
+        <item name="mainInactiveControlSecondary">@color/box_gray_50</item>
+        <item name="notification">@color/watermelon_red</item>
+        <item name="notification_bg">@color/watermelon_red_10</item>
+    </style>
+    <style name="Theme.Box.Preview" parent="@style/Theme.Box.Secondary">
+        <item name="android:textColorSecondary">@color/box_blue_50</item>
+        <item name="android:windowBackground">?appBackground</item>
+        <item name="android:windowAnimationStyle">@style/PreviewActivityAnimation</item>
+        <item name="appBackground">@color/box_gray</item>
+        <item name="pspdf__backgroundColor">?appBackground</item>
+        <item name="pspdf__inlineSearchStyle">@style/InlineSearchStyle</item>
+        <item name="pspdf__outlineViewStyle">@style/PDFOutlineStyle</item>
+        <item name="pspdf__searchResultHighlighterStyle">@style/PdfSearchHighlighterStyle</item>
+        <item name="pspdf__tabBarStyle">@style/PDFToolbarStyle</item>
+        <item name="pspdf__thumbnailGridStyle">@style/PDFGridStyle</item>
+    </style>
+    <style name="Theme.Box.Secondary" parent="@style/Theme.Box">
+        <item name="android:textColorPrimary">@null</item>
+        <item name="android:buttonStyle">@style/ButtonAppTheme</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">@color/box_blue_50</item>
+    </style>
+    <style name="Theme.Box.Toolbar.Primary" parent="@style/Theme.Box.Secondary">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorHint">@color/box_gray_40</item>
+        <item name="colorControlHighlight">@color/box_blue_50_alpha_20</item>
+        <item name="popupBackground">@color/box_dark_gray_4</item>
+        <item name="topBarBackground">@color/box_gray</item>
+        <item name="topBarControl">@color/white</item>
+    </style>
+    <style name="Theme.Box.Toolbar.PrimaryLegacy" parent="@style/Theme.Box">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/box_gray_40</item>
+        <item name="colorControlHighlight">@color/box_gray_05</item>
+        <item name="colorControlNormal">?topBarControl</item>
+        <item name="colorOnPrimary">@color/box_blue_50</item>
+        <item name="topBarBackground">@color/box_dark_gray_3</item>
+        <item name="topBarPrimary">@color/white</item>
+    </style>
+    <style name="Theme.Launcher" parent="@style/Theme.SplashScreen">
+        <item name="postSplashScreenTheme">@style/Theme.Box</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="windowSplashScreenBackground">@color/box_dark_gray_3</item>
+    </style>
+    <style name="Theme.Material3.DayNight" parent="@style/Theme.Material3.Dark" />
+    <style name="Theme.Material3.DayNight.BottomSheetDialog" parent="@style/Theme.Material3.Dark.BottomSheetDialog" />
+    <style name="Theme.Material3.DayNight.Dialog" parent="@style/Theme.Material3.Dark.Dialog" />
+    <style name="Theme.Material3.DayNight.Dialog.Alert" parent="@style/Theme.Material3.Dark.Dialog.Alert" />
+    <style name="Theme.Material3.DayNight.Dialog.MinWidth" parent="@style/Theme.Material3.Dark.Dialog.MinWidth" />
+    <style name="Theme.Material3.DayNight.DialogWhenLarge" parent="@style/Theme.Material3.Dark.DialogWhenLarge" />
+    <style name="Theme.Material3.DayNight.NoActionBar" parent="@style/Theme.Material3.Dark.NoActionBar" />
+    <style name="Theme.Material3.DayNight.SideSheetDialog" parent="@style/Theme.Material3.Dark.SideSheetDialog" />
+    <style name="Theme.Material3.DynamicColors.DayNight" parent="@style/Theme.Material3.DynamicColors.Dark" />
+    <style name="Theme.Material3.DynamicColors.DayNight.NoActionBar" parent="@style/Theme.Material3.DynamicColors.Dark.NoActionBar" />
+    <style name="Theme.MaterialComponents.DayNight" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.BottomSheetDialog" parent="@style/Theme.MaterialComponents.BottomSheetDialog" />
+    <style name="Theme.MaterialComponents.DayNight.Bridge" parent="@style/Theme.MaterialComponents.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge" parent="@style/Theme.MaterialComponents.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog" parent="@style/Theme.MaterialComponents.Dialog" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert" parent="@style/Theme.MaterialComponents.Dialog.Alert" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Alert.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize" parent="@style/Theme.MaterialComponents.Dialog.FixedSize" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.Bridge" parent="@style/Theme.MaterialComponents.Dialog.FixedSize.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth" parent="@style/Theme.MaterialComponents.Dialog.MinWidth" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge" parent="@style/Theme.MaterialComponents.Dialog.MinWidth.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge" parent="@style/Theme.MaterialComponents.DialogWhenLarge" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar" parent="@style/Theme.MaterialComponents.NoActionBar" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge" parent="@style/Theme.MaterialComponents.NoActionBar.Bridge" />
+    <style name="ThemeOverlay.AppCompat.DayNight" parent="@style/ThemeOverlay.AppCompat.Dark" />
+    <style name="ThemeOverlay.Material3.DynamicColors.DayNight" parent="@style/ThemeOverlay.Material3.DynamicColors.Dark" />
+    <style name="Widget.MaterialComponents.ActionBar.PrimarySurface" parent="@style/Widget.MaterialComponents.ActionBar.Surface" />
+    <style name="Widget.MaterialComponents.AppBarLayout.PrimarySurface" parent="@style/Widget.MaterialComponents.AppBarLayout.Surface" />
+    <style name="Widget.MaterialComponents.BottomAppBar.PrimarySurface" parent="@style/Widget.MaterialComponents.BottomAppBar" />
+    <style name="Widget.MaterialComponents.BottomNavigationView.PrimarySurface" parent="@style/Widget.MaterialComponents.BottomNavigationView" />
+    <style name="Widget.MaterialComponents.NavigationRailView.PrimarySurface" parent="@style/Widget.MaterialComponents.NavigationRailView" />
+    <style name="Widget.MaterialComponents.TabLayout.PrimarySurface" parent="@style/Widget.MaterialComponents.TabLayout" />
+    <style name="Widget.MaterialComponents.Toolbar.PrimarySurface" parent="@style/Widget.MaterialComponents.Toolbar.Surface" />
+</resources>

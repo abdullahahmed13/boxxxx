@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/annotation_tool_container" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/tip" android:layout_width="@dimen/box_previewsdk_annotation_tool_width" android:layout_height="12.0dip" android:layout_marginTop="@dimen/box_annotation_toolbar_offset" android:layout_centerHorizontal="true" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/top" android:layout_width="@dimen/box_previewsdk_annotation_tool_width" android:layout_height="36.0dip" android:layout_marginTop="2.0dip" android:scaleType="fitXY" android:layout_centerHorizontal="true" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="@id/tip" />
+    <ImageView android:id="@id/bottom" android:layout_width="@dimen/box_previewsdk_annotation_tool_width" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerHorizontal="true" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/top" />
+</androidx.constraintlayout.widget.ConstraintLayout>

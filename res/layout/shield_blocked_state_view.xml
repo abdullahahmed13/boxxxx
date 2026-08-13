@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/shield_blocked_state_container" android:paddingLeft="@dimen/empty_padding_side" android:paddingRight="@dimen/empty_padding_side" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/activity_vertical_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/shield_blocked_state_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/empty_text_header_margin" android:src="@drawable/ic_shield_blocked_state" android:scaleType="fitCenter" app:tint="?colorAccent" />
+    <TextView android:textAppearance="@style/TextAppearance.Box.Normal.15sp.AppSecondary" android:gravity="center_horizontal" android:id="@id/shield_blocked_state_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shield_blocked_state" android:layout_marginVertical="@dimen/empty_subtext_padding" />
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?contentBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/empty_folder_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="62.0dip" android:layout_marginHorizontal="62.0dip">
+        <ImageView android:id="@id/empty_folder_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_folderfloat140" android:scaleType="fitCenter" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_folder_text_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+            <TextView android:textAppearance="@style/TextAppearance.Box.Medium.16sp.App" android:gravity="center_horizontal" android:id="@id/empty_folder_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_folder_text" />
+            <TextView android:textAppearance="@style/TextAppearance.Box.Normal.14sp.AppSecondary" android:gravity="center_horizontal" android:id="@id/empty_folder_subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/add_content_to_empty_folder" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/shield_blocked_state_view" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/filterResultsHeader" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/filterResultsLegacyRow" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/TextAppearance.Box.Bold.14sp.Accent" android:ellipsize="end" android:id="@id/filterResults" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@id/filterIcon" android:layout_alignParentLeft="true" />
+                <ImageView android:id="@id/filterIcon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@null" android:layout_alignParentRight="true" app:tint="?colorAccent" />
+            </RelativeLayout>
+            <View android:background="@drawable/box_browsesdk_item_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/box_browsesdk_swipe_reresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/box_browsesdk_items_recycler_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <com.google.android.material.progressindicator.CircularProgressIndicator android:layout_gravity="center" android:id="@id/box_browsesdk_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:progressTint="?colorAccent" app:trackCornerRadius="4.0dip" />
+</FrameLayout>

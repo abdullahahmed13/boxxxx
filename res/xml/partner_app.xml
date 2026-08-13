@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <app enabled="true" install_dialog_enabled="true" install_dialog_image="@drawable/promoted_partner_app_logo_office" install_dialog_message="@string/office_install_msg" install_dialog_title="@string/office_install_title" install_dialog_url="https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow" name="@string/microsoft_office" tooltip_enabled="true" tooltip_image="@drawable/promoted_partner_app_logo_office" tooltip_text="@string/office_open_edit_text">
+        <package>com.microsoft.office.officehubrow</package>
+        <mime_types>application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</mime_types>
+    </app>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?contentBackground" android:paddingTop="@dimen/dialog_padding" android:paddingBottom="@dimen/dialog_space_between_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dialog_padding" android:paddingEnd="@dimen/dialog_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/dialog_min_width">
+        <FrameLayout android:id="@id/sceneRoot" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/ftux_content" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dialog_button_margin_top"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <Button android:id="@id/btnNegative" android:layout_centerVertical="true" android:layout_toStartOf="@id/btnPositive" style="@style/Widget.Box.TextButton.Accent" />
+            <Button android:id="@id/btnPositive" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/Widget.Box.TextButton.Accent" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

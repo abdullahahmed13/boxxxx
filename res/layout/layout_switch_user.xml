@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/linear_layout_title_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dialog_padding" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Box.Medium.20sp.Content" android:gravity="left" android:id="@id/dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/Try_with_another_account" />
+    <ListView android:id="@id/list" android:background="?contentBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dialog_space_between_content" android:drawSelectorOnTop="false" android:cacheColorHint="#ffffffff" android:divider="@drawable/box_browsesdk_item_divider" android:fadeScrollbars="false" />
+</LinearLayout>

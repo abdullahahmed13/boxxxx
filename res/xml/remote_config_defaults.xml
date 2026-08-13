@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>blacklist_eid</key>
+        <value>{"ids": []}</value>
+    </entry>
+    <entry>
+        <key>excluded_uid</key>
+        <value>{"ids": ["278857013", "278857257"]}</value>
+    </entry>
+    <entry>
+        <key>included_uid</key>
+        <value>{"ids": ["278857157","278857461","255090318"]}</value>
+    </entry>
+    <entry>
+        <key>experiments</key>
+        <value>{"experiments":[]}</value>
+    </entry>
+</defaultsMap>

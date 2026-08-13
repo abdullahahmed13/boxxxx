@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?contentBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/shield_blocked_state_view" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/box_browsesdk_swipe_reresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/redesignedFilterButton" android:background="@drawable/search_filter_button_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_marginStart="8.0dip" android:paddingHorizontal="10.0dip">
+                    <TextView android:textAppearance="@style/TextAppearance.Box.Medium.14sp" android:textColor="?appPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filters_header" />
+                    <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/search_filter" android:tint="?appPrimary" android:contentDescription="@string/filter_results_header" android:layout_marginStart="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/filterResultsHeader" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                    <HorizontalScrollView android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/filterChipsContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </HorizontalScrollView>
+                </LinearLayout>
+                <TextView android:textAppearance="@style/TextAppearance.Box.Medium.14sp.ContentSecondary" android:id="@id/resultsTextInFilesHeader" android:paddingTop="16.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/box_browsesdk_items_recycler_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/empty_folder_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip">
+                    <ImageView android:id="@id/empty_folder_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_folderfloat140" android:scaleType="fitCenter" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_folder_text_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+                        <TextView android:textAppearance="@style/TextAppearance.Box.Medium.16sp.App" android:gravity="center_horizontal" android:id="@id/empty_folder_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_folder_text" />
+                        <TextView android:textAppearance="@style/TextAppearance.Box.Normal.14sp.AppSecondary" android:gravity="center_horizontal" android:id="@id/empty_folder_subtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/add_content_to_empty_folder" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.google.android.material.progressindicator.CircularProgressIndicator android:layout_gravity="center" android:id="@id/box_browsesdk_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:progressTint="?colorAccent" app:trackCornerRadius="4.0dip" />
+</FrameLayout>
