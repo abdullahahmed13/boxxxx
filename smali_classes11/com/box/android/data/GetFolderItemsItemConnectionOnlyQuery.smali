@@ -1,0 +1,368 @@
+.class public final Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;
+.super Ljava/lang/Object;
+.source "GetFolderItemsItemConnectionOnlyQuery.kt"
+
+# interfaces
+.implements Lcom/apollographql/apollo3/api/Query;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery$Companion;,
+        Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery$Data;,
+        Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery$Folder;,
+        Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery$ItemConnection;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/apollographql/apollo3/api/Query<",
+        "Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery$Data;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0008\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0006\u0008\u0086\u0008\u0018\u0000 \"2\u0008\u0012\u0004\u0012\u00020\u00020\u0001:\u0004\u001f !\"B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0004\u0008\u0005\u0010\u0006J\u0008\u0010\t\u001a\u00020\u0004H\u0016J\u0008\u0010\n\u001a\u00020\u0004H\u0016J\u0008\u0010\u000b\u001a\u00020\u0004H\u0016J\u0018\u0010\u000c\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u0011H\u0016J\u000e\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0013H\u0016J\u0008\u0010\u0014\u001a\u00020\u0015H\u0016J\t\u0010\u0016\u001a\u00020\u0004H\u00c6\u0003J\u0013\u0010\u0017\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u0004H\u00c6\u0001J\u0013\u0010\u0018\u001a\u00020\u00192\u0008\u0010\u001a\u001a\u0004\u0018\u00010\u001bH\u00d6\u0003J\t\u0010\u001c\u001a\u00020\u001dH\u00d6\u0001J\t\u0010\u001e\u001a\u00020\u0004H\u00d6\u0001R\u0011\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0007\u0010\u0008\u00a8\u0006#"
+    }
+    d2 = {
+        "Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;",
+        "Lcom/apollographql/apollo3/api/Query;",
+        "Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery$Data;",
+        "folderID",
+        "",
+        "<init>",
+        "(Ljava/lang/String;)V",
+        "getFolderID",
+        "()Ljava/lang/String;",
+        "id",
+        "document",
+        "name",
+        "serializeVariables",
+        "",
+        "writer",
+        "Lcom/apollographql/apollo3/api/json/JsonWriter;",
+        "customScalarAdapters",
+        "Lcom/apollographql/apollo3/api/CustomScalarAdapters;",
+        "adapter",
+        "Lcom/apollographql/apollo3/api/Adapter;",
+        "rootField",
+        "Lcom/apollographql/apollo3/api/CompiledField;",
+        "component1",
+        "copy",
+        "equals",
+        "",
+        "other",
+        "",
+        "hashCode",
+        "",
+        "toString",
+        "Data",
+        "Folder",
+        "ItemConnection",
+        "Companion",
+        "data_generalProdRelease"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x2,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final Companion:Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery$Companion;
+
+.field public static final OPERATION_ID:Ljava/lang/String; = "2c855fa1645f9ca35718b9df83a99f1170e99e404992630f98a3815cd16c26fd"
+
+.field public static final OPERATION_NAME:Ljava/lang/String; = "getFolderItemsItemConnectionOnly"
+
+
+# instance fields
+.field private final folderID:Ljava/lang/String;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery$Companion;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sput-object v0, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;->Companion:Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery$Companion;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 1
+
+    const-string v0, "folderID"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 22
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 23
+    iput-object p1, p0, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;->folderID:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public static synthetic copy$default(Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;Ljava/lang/String;ILjava/lang/Object;)Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;
+    .locals 0
+
+    and-int/lit8 p2, p2, 0x1
+
+    if-eqz p2, :cond_0
+
+    iget-object p1, p0, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;->folderID:Ljava/lang/String;
+
+    :cond_0
+    invoke-virtual {p0, p1}, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;->copy(Ljava/lang/String;)Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public adapter()Lcom/apollographql/apollo3/api/Adapter;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/apollographql/apollo3/api/Adapter<",
+            "Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery$Data;",
+            ">;"
+        }
+    .end annotation
+
+    .line 38
+    sget-object p0, Lcom/box/android/data/adapter/GetFolderItemsItemConnectionOnlyQuery_ResponseAdapter$Data;->INSTANCE:Lcom/box/android/data/adapter/GetFolderItemsItemConnectionOnlyQuery_ResponseAdapter$Data;
+
+    check-cast p0, Lcom/apollographql/apollo3/api/Adapter;
+
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    invoke-static {p0, v2, v0, v1}, Lcom/apollographql/apollo3/api/Adapters;->-obj$default(Lcom/apollographql/apollo3/api/Adapter;ZILjava/lang/Object;)Lcom/apollographql/apollo3/api/ObjectAdapter;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/apollographql/apollo3/api/Adapter;
+
+    return-object p0
+.end method
+
+.method public final component1()Ljava/lang/String;
+    .locals 0
+
+    iget-object p0, p0, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;->folderID:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public final copy(Ljava/lang/String;)Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;
+    .locals 0
+
+    const-string p0, "folderID"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance p0, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;
+
+    invoke-direct {p0, p1}, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;-><init>(Ljava/lang/String;)V
+
+    return-object p0
+.end method
+
+.method public document()Ljava/lang/String;
+    .locals 0
+
+    .line 27
+    sget-object p0, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;->Companion:Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery$Companion;
+
+    invoke-virtual {p0}, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery$Companion;->getOPERATION_DOCUMENT()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
+
+    :cond_1
+    check-cast p1, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;
+
+    iget-object p0, p0, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;->folderID:Ljava/lang/String;
+
+    iget-object p1, p1, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;->folderID:Ljava/lang/String;
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-nez p0, :cond_2
+
+    return v2
+
+    :cond_2
+    return v0
+.end method
+
+.method public final getFolderID()Ljava/lang/String;
+    .locals 0
+
+    .line 23
+    iget-object p0, p0, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;->folderID:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public hashCode()I
+    .locals 0
+
+    iget-object p0, p0, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;->folderID:Ljava/lang/String;
+
+    invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public id()Ljava/lang/String;
+    .locals 0
+
+    .line 25
+    const-string p0, "2c855fa1645f9ca35718b9df83a99f1170e99e404992630f98a3815cd16c26fd"
+
+    return-object p0
+.end method
+
+.method public name()Ljava/lang/String;
+    .locals 0
+
+    .line 29
+    const-string p0, "getFolderItemsItemConnectionOnly"
+
+    return-object p0
+.end method
+
+.method public rootField()Lcom/apollographql/apollo3/api/CompiledField;
+    .locals 2
+
+    .line 40
+    new-instance p0, Lcom/apollographql/apollo3/api/CompiledField$Builder;
+
+    .line 42
+    sget-object v0, Lcom/box/android/data/type/Query;->Companion:Lcom/box/android/data/type/Query$Companion;
+
+    invoke-virtual {v0}, Lcom/box/android/data/type/Query$Companion;->getType()Lcom/apollographql/apollo3/api/ObjectType;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/apollographql/apollo3/api/CompiledType;
+
+    .line 40
+    const-string v1, "data"
+
+    invoke-direct {p0, v1, v0}, Lcom/apollographql/apollo3/api/CompiledField$Builder;-><init>(Ljava/lang/String;Lcom/apollographql/apollo3/api/CompiledType;)V
+
+    .line 44
+    sget-object v0, Lcom/box/android/data/selections/GetFolderItemsItemConnectionOnlyQuerySelections;->INSTANCE:Lcom/box/android/data/selections/GetFolderItemsItemConnectionOnlyQuerySelections;
+
+    invoke-virtual {v0}, Lcom/box/android/data/selections/GetFolderItemsItemConnectionOnlyQuerySelections;->get__root()Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/apollographql/apollo3/api/CompiledField$Builder;->selections(Ljava/util/List;)Lcom/apollographql/apollo3/api/CompiledField$Builder;
+
+    move-result-object p0
+
+    .line 45
+    invoke-virtual {p0}, Lcom/apollographql/apollo3/api/CompiledField$Builder;->build()Lcom/apollographql/apollo3/api/CompiledField;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public serializeVariables(Lcom/apollographql/apollo3/api/json/JsonWriter;Lcom/apollographql/apollo3/api/CustomScalarAdapters;)V
+    .locals 1
+
+    const-string v0, "writer"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "customScalarAdapters"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 33
+    sget-object v0, Lcom/box/android/data/adapter/GetFolderItemsItemConnectionOnlyQuery_VariablesAdapter;->INSTANCE:Lcom/box/android/data/adapter/GetFolderItemsItemConnectionOnlyQuery_VariablesAdapter;
+
+    invoke-virtual {v0, p1, p2, p0}, Lcom/box/android/data/adapter/GetFolderItemsItemConnectionOnlyQuery_VariablesAdapter;->toJson(Lcom/apollographql/apollo3/api/json/JsonWriter;Lcom/apollographql/apollo3/api/CustomScalarAdapters;Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;)V
+
+    return-void
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    iget-object p0, p0, Lcom/box/android/data/GetFolderItemsItemConnectionOnlyQuery;->folderID:Ljava/lang/String;
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "GetFolderItemsItemConnectionOnlyQuery(folderID="
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    const-string v0, ")"
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method

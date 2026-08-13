@@ -1,0 +1,6 @@
+.class public interface abstract Lcom/box/android/coreservices/jobmanager/contentproviders/HiltWrapper_UploadSyncContentProvider_UploadSyncContentProviderEntryPoint;
+.super Ljava/lang/Object;
+.source "HiltWrapper_UploadSyncContentProvider_UploadSyncContentProviderEntryPoint.java"
+
+# interfaces
+.implements Lcom/box/android/coreservices/jobmanager/contentproviders/UploadSyncContentProvider$UploadSyncContentProviderEntryPoint;

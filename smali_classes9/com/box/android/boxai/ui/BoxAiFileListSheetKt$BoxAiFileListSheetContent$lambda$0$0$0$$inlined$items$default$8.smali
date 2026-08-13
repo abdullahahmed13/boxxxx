@@ -1,0 +1,247 @@
+.class public final Lcom/box/android/boxai/ui/BoxAiFileListSheetKt$BoxAiFileListSheetContent$lambda$0$0$0$$inlined$items$default$8;
+.super Ljava/lang/Object;
+.source "LazyDsl.kt"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function4;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/box/android/boxai/ui/BoxAiFileListSheetKt;->BoxAiFileListSheetContent(Ljava/util/List;Ljava/util/List;ILandroidx/compose/runtime/Composer;I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lkotlin/jvm/functions/Function4<",
+        "Landroidx/compose/foundation/lazy/LazyItemScope;",
+        "Ljava/lang/Integer;",
+        "Landroidx/compose/runtime/Composer;",
+        "Ljava/lang/Integer;",
+        "Lkotlin/Unit;",
+        ">;"
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nLazyDsl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyDsl.kt\nandroidx/compose/foundation/lazy/LazyDslKt$items$4\n+ 2 BoxAiFileListSheet.kt\ncom/box/android/boxai/ui/BoxAiFileListSheetKt\n*L\n1#1,523:1\n105#2,5:524\n*E\n"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x2,
+        0x2,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field final synthetic $items:Ljava/util/List;
+
+
+# direct methods
+.method public constructor <init>(Ljava/util/List;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/box/android/boxai/ui/BoxAiFileListSheetKt$BoxAiFileListSheetContent$lambda$0$0$0$$inlined$items$default$8;->$items:Ljava/util/List;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 178
+    check-cast p1, Landroidx/compose/foundation/lazy/LazyItemScope;
+
+    check-cast p2, Ljava/lang/Number;
+
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+
+    move-result p2
+
+    check-cast p3, Landroidx/compose/runtime/Composer;
+
+    check-cast p4, Ljava/lang/Number;
+
+    invoke-virtual {p4}, Ljava/lang/Number;->intValue()I
+
+    move-result p4
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/box/android/boxai/ui/BoxAiFileListSheetKt$BoxAiFileListSheetContent$lambda$0$0$0$$inlined$items$default$8;->invoke(Landroidx/compose/foundation/lazy/LazyItemScope;ILandroidx/compose/runtime/Composer;I)V
+
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method public final invoke(Landroidx/compose/foundation/lazy/LazyItemScope;ILandroidx/compose/runtime/Composer;I)V
+    .locals 6
+
+    const-string v0, "CN(it)178@8834L22:LazyDsl.kt#428nma"
+
+    invoke-static {p3, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    and-int/lit8 v0, p4, 0x6
+
+    if-nez v0, :cond_1
+
+    invoke-interface {p3, p1}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x4
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x2
+
+    :goto_0
+    or-int/2addr p1, p4
+
+    goto :goto_1
+
+    :cond_1
+    move p1, p4
+
+    :goto_1
+    and-int/lit8 p4, p4, 0x30
+
+    if-nez p4, :cond_3
+
+    invoke-interface {p3, p2}, Landroidx/compose/runtime/Composer;->changed(I)Z
+
+    move-result p4
+
+    if-eqz p4, :cond_2
+
+    const/16 p4, 0x20
+
+    goto :goto_2
+
+    :cond_2
+    const/16 p4, 0x10
+
+    :goto_2
+    or-int/2addr p1, p4
+
+    :cond_3
+    and-int/lit16 p4, p1, 0x93
+
+    const/16 v0, 0x92
+
+    if-eq p4, v0, :cond_4
+
+    const/4 p4, 0x1
+
+    goto :goto_3
+
+    :cond_4
+    const/4 p4, 0x0
+
+    :goto_3
+    and-int/lit8 v0, p1, 0x1
+
+    invoke-interface {p3, p4, v0}, Landroidx/compose/runtime/Composer;->shouldExecute(ZI)Z
+
+    move-result p4
+
+    if-eqz p4, :cond_7
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result p4
+
+    if-eqz p4, :cond_5
+
+    const/4 p4, -0x1
+
+    const-string v0, "androidx.compose.foundation.lazy.items.<anonymous> (LazyDsl.kt:178)"
+
+    const v1, 0x2fd4df92
+
+    invoke-static {v1, p1, p4, v0}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+
+    .line 179
+    :cond_5
+    iget-object p0, p0, Lcom/box/android/boxai/ui/BoxAiFileListSheetKt$BoxAiFileListSheetContent$lambda$0$0$0$$inlined$items$default$8;->$items:Ljava/util/List;
+
+    invoke-interface {p0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lkotlin/Pair;
+
+    const p1, 0x288e46d3
+
+    .line 524
+    invoke-interface {p3, p1}, Landroidx/compose/runtime/Composer;->startReplaceGroup(I)V
+
+    const-string p1, "C*104@4193L124:BoxAiFileListSheet.kt#bwxcym"
+
+    invoke-static {p3, p1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lkotlin/Pair;->component1()Ljava/lang/Object;
+
+    move-result-object p1
+
+    move-object v0, p1
+
+    check-cast v0, Lcom/box/android/domain/models/item/ItemModel;
+
+    invoke-virtual {p0}, Lkotlin/Pair;->component2()Ljava/lang/Object;
+
+    move-result-object p0
+
+    move-object v2, p0
+
+    check-cast v2, Lcom/box/android/domain/models/boxai/AiUnavailabilityReason;
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x2
+
+    const/4 v1, 0x0
+
+    move-object v3, p3
+
+    invoke-static/range {v0 .. v5}, Lcom/box/android/boxai/ui/BoxAiFileListItemKt;->BoxAiFileListItem(Lcom/box/android/domain/models/item/ItemModel;Landroidx/compose/ui/Modifier;Lcom/box/android/domain/models/boxai/AiUnavailabilityReason;Landroidx/compose/runtime/Composer;II)V
+
+    invoke-interface {v3}, Landroidx/compose/runtime/Composer;->endReplaceGroup()V
+
+    .line 179
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_6
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
+
+    :cond_6
+    return-void
+
+    :cond_7
+    move-object v3, p3
+
+    .line 178
+    invoke-interface {v3}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
+
+    return-void
+.end method

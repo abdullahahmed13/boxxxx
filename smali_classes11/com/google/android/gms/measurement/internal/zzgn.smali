@@ -1,0 +1,34 @@
+.class final synthetic Lcom/google/android/gms/measurement/internal/zzgn;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-measurement-impl@@17.2.3"
+
+# interfaces
+.implements Lcom/google/android/gms/measurement/internal/zziq;
+
+
+# instance fields
+.field private final zza:Lcom/google/android/gms/measurement/internal/zzgo;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/gms/measurement/internal/zzgo;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/measurement/internal/zzgn;->zza:Lcom/google/android/gms/measurement/internal/zzgo;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final zza(Ljava/lang/String;ILjava/lang/Throwable;[BLjava/util/Map;)V
+    .locals 0
+
+    iget-object p0, p0, Lcom/google/android/gms/measurement/internal/zzgn;->zza:Lcom/google/android/gms/measurement/internal/zzgo;
+
+    invoke-virtual/range {p0 .. p5}, Lcom/google/android/gms/measurement/internal/zzgo;->zza(Ljava/lang/String;ILjava/lang/Throwable;[BLjava/util/Map;)V
+
+    return-void
+.end method

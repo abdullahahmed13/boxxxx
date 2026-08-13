@@ -1,0 +1,34 @@
+.class public final synthetic Lcom/box/android/preview/previewtype/audio/AudioPreviewReducer$$ExternalSyntheticLambda0;
+.super Ljava/lang/Object;
+.source "D8$$SyntheticClass"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# direct methods
+.method public synthetic constructor <init>()V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 0
+    check-cast p1, Lcom/box/android/preview/previewtype/audio/AudioPreviewReducer$State;
+
+    check-cast p2, Lcom/box/android/preview/previewtype/audio/AudioPreviewReducer$Action;
+
+    invoke-static {p1, p2}, Lcom/box/android/preview/previewtype/audio/AudioPreviewReducer;->$r8$lambda$Sck4pkgN1K2mnS7WNm3FP-QDbv4(Lcom/box/android/preview/previewtype/audio/AudioPreviewReducer$State;Lcom/box/android/preview/previewtype/audio/AudioPreviewReducer$Action;)Lcom/box/android/cpl/ReducerResult;
+
+    move-result-object p0
+
+    return-object p0
+.end method

@@ -1,0 +1,41 @@
+.class Lcom/box/androidsdk/content/models/BoxEntity$5;
+.super Ljava/lang/Object;
+.source "BoxEntity.java"
+
+# interfaces
+.implements Lcom/box/androidsdk/content/models/BoxEntity$BoxEntityCreator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/box/androidsdk/content/models/BoxEntity;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .line 50
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public createEntity()Lcom/box/androidsdk/content/models/BoxEntity;
+    .locals 0
+
+    .line 53
+    new-instance p0, Lcom/box/androidsdk/content/models/BoxFileVersion;
+
+    invoke-direct {p0}, Lcom/box/androidsdk/content/models/BoxFileVersion;-><init>()V
+
+    return-object p0
+.end method
