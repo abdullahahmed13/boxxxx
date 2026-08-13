@@ -1,0 +1,39 @@
+.class public final Lcom/microsoft/identity/common/java/nativeauth/providers/responses/jit/JITChallengeApiResult$DefaultImpls;
+.super Ljava/lang/Object;
+.source "JITChallengeApiResult.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/microsoft/identity/common/java/nativeauth/providers/responses/jit/JITChallengeApiResult;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "DefaultImpls"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# direct methods
+.method public static containsPii(Lcom/microsoft/identity/common/java/nativeauth/providers/responses/jit/JITChallengeApiResult;)Z
+    .locals 0
+
+    .line 32
+    check-cast p0, Lcom/microsoft/identity/common/java/nativeauth/providers/responses/ApiResult;
+
+    invoke-static {p0}, Lcom/microsoft/identity/common/java/nativeauth/providers/responses/ApiResult$DefaultImpls;->containsPii(Lcom/microsoft/identity/common/java/nativeauth/providers/responses/ApiResult;)Z
+
+    move-result p0
+
+    return p0
+.end method

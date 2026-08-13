@@ -1,0 +1,117 @@
+.class final Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$ResetPasswordStartCommandParametersBuilderImpl;
+.super Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$ResetPasswordStartCommandParametersBuilder;
+.source "ResetPasswordStartCommandParameters.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1a
+    name = "ResetPasswordStartCommandParametersBuilderImpl"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$ResetPasswordStartCommandParametersBuilder<",
+        "Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters;",
+        "Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$ResetPasswordStartCommandParametersBuilderImpl;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 36
+    invoke-direct {p0}, Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$ResetPasswordStartCommandParametersBuilder;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$1;)V
+    .locals 0
+
+    .line 36
+    invoke-direct {p0}, Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$ResetPasswordStartCommandParametersBuilderImpl;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic build()Lcom/microsoft/identity/common/java/commands/parameters/CommandParameters;
+    .locals 0
+
+    .line 36
+    invoke-virtual {p0}, Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$ResetPasswordStartCommandParametersBuilderImpl;->build()Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bridge synthetic build()Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/BaseNativeAuthCommandParameters;
+    .locals 0
+
+    .line 36
+    invoke-virtual {p0}, Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$ResetPasswordStartCommandParametersBuilderImpl;->build()Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public build()Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters;
+    .locals 1
+
+    .line 36
+    new-instance v0, Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters;
+
+    invoke-direct {v0, p0}, Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters;-><init>(Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$ResetPasswordStartCommandParametersBuilder;)V
+
+    return-object v0
+.end method
+
+.method protected bridge synthetic self()Lcom/microsoft/identity/common/java/commands/parameters/CommandParameters$CommandParametersBuilder;
+    .locals 0
+
+    .line 36
+    invoke-virtual {p0}, Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$ResetPasswordStartCommandParametersBuilderImpl;->self()Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$ResetPasswordStartCommandParametersBuilderImpl;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method protected bridge synthetic self()Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/BaseNativeAuthCommandParameters$BaseNativeAuthCommandParametersBuilder;
+    .locals 0
+
+    .line 36
+    invoke-virtual {p0}, Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$ResetPasswordStartCommandParametersBuilderImpl;->self()Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$ResetPasswordStartCommandParametersBuilderImpl;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method protected bridge synthetic self()Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$ResetPasswordStartCommandParametersBuilder;
+    .locals 0
+
+    .line 36
+    invoke-virtual {p0}, Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$ResetPasswordStartCommandParametersBuilderImpl;->self()Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$ResetPasswordStartCommandParametersBuilderImpl;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method protected self()Lcom/microsoft/identity/common/java/nativeauth/commands/parameters/ResetPasswordStartCommandParameters$ResetPasswordStartCommandParametersBuilderImpl;
+    .locals 0
+
+    return-object p0
+.end method

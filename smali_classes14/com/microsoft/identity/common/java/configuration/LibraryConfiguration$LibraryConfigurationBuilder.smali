@@ -1,0 +1,107 @@
+.class public Lcom/microsoft/identity/common/java/configuration/LibraryConfiguration$LibraryConfigurationBuilder;
+.super Ljava/lang/Object;
+.source "LibraryConfiguration.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/microsoft/identity/common/java/configuration/LibraryConfiguration;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "LibraryConfigurationBuilder"
+.end annotation
+
+
+# instance fields
+.field private authorizationInCurrentTask:Z
+
+.field private refreshInEnabled:Z
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .line 39
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public authorizationInCurrentTask(Z)Lcom/microsoft/identity/common/java/configuration/LibraryConfiguration$LibraryConfigurationBuilder;
+    .locals 0
+
+    .line 39
+    iput-boolean p1, p0, Lcom/microsoft/identity/common/java/configuration/LibraryConfiguration$LibraryConfigurationBuilder;->authorizationInCurrentTask:Z
+
+    return-object p0
+.end method
+
+.method public build()Lcom/microsoft/identity/common/java/configuration/LibraryConfiguration;
+    .locals 2
+
+    .line 39
+    new-instance v0, Lcom/microsoft/identity/common/java/configuration/LibraryConfiguration;
+
+    iget-boolean v1, p0, Lcom/microsoft/identity/common/java/configuration/LibraryConfiguration$LibraryConfigurationBuilder;->authorizationInCurrentTask:Z
+
+    iget-boolean p0, p0, Lcom/microsoft/identity/common/java/configuration/LibraryConfiguration$LibraryConfigurationBuilder;->refreshInEnabled:Z
+
+    invoke-direct {v0, v1, p0}, Lcom/microsoft/identity/common/java/configuration/LibraryConfiguration;-><init>(ZZ)V
+
+    return-object v0
+.end method
+
+.method public refreshInEnabled(Z)Lcom/microsoft/identity/common/java/configuration/LibraryConfiguration$LibraryConfigurationBuilder;
+    .locals 0
+
+    .line 39
+    iput-boolean p1, p0, Lcom/microsoft/identity/common/java/configuration/LibraryConfiguration$LibraryConfigurationBuilder;->refreshInEnabled:Z
+
+    return-object p0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    .line 39
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "LibraryConfiguration.LibraryConfigurationBuilder(authorizationInCurrentTask="
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-boolean v1, p0, Lcom/microsoft/identity/common/java/configuration/LibraryConfiguration$LibraryConfigurationBuilder;->authorizationInCurrentTask:Z
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", refreshInEnabled="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-boolean p0, p0, Lcom/microsoft/identity/common/java/configuration/LibraryConfiguration$LibraryConfigurationBuilder;->refreshInEnabled:Z
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    const-string v0, ")"
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method

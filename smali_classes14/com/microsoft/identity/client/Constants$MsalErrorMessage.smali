@@ -1,0 +1,35 @@
+.class final Lcom/microsoft/identity/client/Constants$MsalErrorMessage;
+.super Ljava/lang/Object;
+.source "Constants.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/microsoft/identity/client/Constants;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = "MsalErrorMessage"
+.end annotation
+
+
+# static fields
+.field static final AUTHORIZATION_SERVER_INVALID_RESPONSE:Ljava/lang/String; = "The authorization server returned an invalid response."
+
+.field static final STATE_NOT_RETURNED:Ljava/lang/String; = "State is not returned"
+
+.field static final STATE_NOT_THE_SAME:Ljava/lang/String; = "Returned state from authorize endpoint is not the same as the one sent"
+
+.field static final USER_CANCELLED_FLOW:Ljava/lang/String; = "User pressed device back button to cancel the flow."
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .line 61
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

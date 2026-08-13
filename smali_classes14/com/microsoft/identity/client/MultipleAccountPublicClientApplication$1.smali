@@ -1,0 +1,97 @@
+.class Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication$1;
+.super Ljava/lang/Object;
+.source "MultipleAccountPublicClientApplication.java"
+
+# interfaces
+.implements Lcom/microsoft/identity/common/internal/migration/TokenMigrationCallback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication;->getAccountsInternal(Lcom/microsoft/identity/client/IPublicClientApplication$LoadAccountsCallback;Ljava/lang/String;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication;
+
+.field final synthetic val$callback:Lcom/microsoft/identity/client/IPublicClientApplication$LoadAccountsCallback;
+
+.field final synthetic val$publicApiId:Ljava/lang/String;
+
+
+# direct methods
+.method constructor <init>(Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication;Lcom/microsoft/identity/client/IPublicClientApplication$LoadAccountsCallback;Ljava/lang/String;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 122
+    iput-object p1, p0, Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication$1;->this$0:Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication;
+
+    iput-object p2, p0, Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication$1;->val$callback:Lcom/microsoft/identity/client/IPublicClientApplication$LoadAccountsCallback;
+
+    iput-object p3, p0, Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication$1;->val$publicApiId:Ljava/lang/String;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onMigrationFinished(I)V
+    .locals 3
+
+    .line 125
+    iget-object p1, p0, Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication$1;->this$0:Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication;
+
+    iget-object p1, p1, Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication;->mPublicClientConfiguration:Lcom/microsoft/identity/client/PublicClientApplicationConfiguration;
+
+    iget-object v0, p0, Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication$1;->this$0:Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication;
+
+    iget-object v0, v0, Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication;->mPublicClientConfiguration:Lcom/microsoft/identity/client/PublicClientApplicationConfiguration;
+
+    invoke-virtual {v0}, Lcom/microsoft/identity/client/PublicClientApplicationConfiguration;->getOAuth2TokenCache()Lcom/microsoft/identity/common/java/providers/oauth2/OAuth2TokenCache;
+
+    move-result-object v0
+
+    invoke-static {p1, v0}, Lcom/microsoft/identity/client/internal/CommandParametersAdapter;->createCommandParameters(Lcom/microsoft/identity/client/PublicClientApplicationConfiguration;Lcom/microsoft/identity/common/java/providers/oauth2/OAuth2TokenCache;)Lcom/microsoft/identity/common/java/commands/parameters/CommandParameters;
+
+    move-result-object p1
+
+    .line 126
+    new-instance v0, Lcom/microsoft/identity/common/internal/commands/LoadAccountCommand;
+
+    new-instance v1, Lcom/microsoft/identity/client/internal/controllers/MSALControllerFactory;
+
+    iget-object v2, p0, Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication$1;->this$0:Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication;
+
+    iget-object v2, v2, Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication;->mPublicClientConfiguration:Lcom/microsoft/identity/client/PublicClientApplicationConfiguration;
+
+    invoke-direct {v1, v2}, Lcom/microsoft/identity/client/internal/controllers/MSALControllerFactory;-><init>(Lcom/microsoft/identity/client/PublicClientApplicationConfiguration;)V
+
+    iget-object v2, p0, Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication$1;->val$callback:Lcom/microsoft/identity/client/IPublicClientApplication$LoadAccountsCallback;
+
+    .line 129
+    invoke-static {v2}, Lcom/microsoft/identity/client/PublicClientApplication;->getLoadAccountsCallback(Lcom/microsoft/identity/client/IPublicClientApplication$LoadAccountsCallback;)Lcom/microsoft/identity/common/java/commands/CommandCallback;
+
+    move-result-object v2
+
+    iget-object p0, p0, Lcom/microsoft/identity/client/MultipleAccountPublicClientApplication$1;->val$publicApiId:Ljava/lang/String;
+
+    invoke-direct {v0, p1, v1, v2, p0}, Lcom/microsoft/identity/common/internal/commands/LoadAccountCommand;-><init>(Lcom/microsoft/identity/common/java/commands/parameters/CommandParameters;Lcom/microsoft/identity/common/java/controllers/IControllerFactory;Lcom/microsoft/identity/common/java/commands/CommandCallback;Ljava/lang/String;)V
+
+    .line 133
+    invoke-static {v0}, Lcom/microsoft/identity/common/java/controllers/CommandDispatcher;->submitSilent(Lcom/microsoft/identity/common/java/commands/BaseCommand;)V
+
+    return-void
+.end method

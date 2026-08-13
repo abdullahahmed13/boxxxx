@@ -1,0 +1,29 @@
+.class final Lcom/microsoft/identity/common/java/cache/BrokerApplicationMetadata$SerializedNames;
+.super Lcom/microsoft/identity/common/java/cache/AbstractApplicationMetadata$SerializedNames;
+.source "BrokerApplicationMetadata.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/microsoft/identity/common/java/cache/BrokerApplicationMetadata;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1a
+    name = "SerializedNames"
+.end annotation
+
+
+# static fields
+.field static final FAMILY_ID:Ljava/lang/String; = "family_id"
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 36
+    invoke-direct {p0}, Lcom/microsoft/identity/common/java/cache/AbstractApplicationMetadata$SerializedNames;-><init>()V
+
+    return-void
+.end method

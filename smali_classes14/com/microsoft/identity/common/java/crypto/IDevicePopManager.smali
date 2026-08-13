@@ -1,0 +1,208 @@
+.class public interface abstract Lcom/microsoft/identity/common/java/crypto/IDevicePopManager;
+.super Ljava/lang/Object;
+.source "IDevicePopManager.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/microsoft/identity/common/java/crypto/IDevicePopManager$Cipher;,
+        Lcom/microsoft/identity/common/java/crypto/IDevicePopManager$PublicKeyFormat;
+    }
+.end annotation
+
+
+# static fields
+.field public static final MGF_1:Ljava/lang/String; = "MGF1"
+
+.field public static final SHA_1:Ljava/lang/String; = "SHA-1"
+
+
+# virtual methods
+.method public abstract asymmetricKeyExists()Z
+.end method
+
+.method public abstract asymmetricKeyExists(Ljava/lang/String;)Z
+.end method
+
+.method public abstract clearAsymmetricKey()Z
+.end method
+
+.method public abstract decrypt(Lcom/microsoft/identity/common/java/crypto/IDevicePopManager$Cipher;Ljava/lang/String;)Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/java/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract decrypt(Lcom/microsoft/identity/common/java/crypto/IDevicePopManager$Cipher;[B)[B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/java/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract encrypt(Lcom/microsoft/identity/common/java/crypto/IDevicePopManager$Cipher;Ljava/lang/String;)Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/java/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract encrypt(Lcom/microsoft/identity/common/java/crypto/IDevicePopManager$Cipher;[B)[B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/java/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract generateAsymmetricKey()Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/java/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract generateAsymmetricKey(Lcom/microsoft/identity/common/java/util/TaskCompletedCallbackWithError;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/microsoft/identity/common/java/util/TaskCompletedCallbackWithError<",
+            "Ljava/lang/String;",
+            "Lcom/microsoft/identity/common/java/exception/ClientException;",
+            ">;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract getAsymmetricKeyCreationDate()Ljava/util/Date;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/java/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract getAsymmetricKeyThumbprint()Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/java/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract getCertificateChain()[Ljava/security/cert/Certificate;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/java/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract getKeyManager()Lcom/microsoft/identity/common/java/crypto/IKeyStoreKeyManager;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/microsoft/identity/common/java/crypto/IKeyStoreKeyManager<",
+            "Ljava/security/KeyStore$PrivateKeyEntry;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getPublicKey(Lcom/microsoft/identity/common/java/crypto/IDevicePopManager$PublicKeyFormat;)Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/java/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract getPublicKey()Ljava/security/PublicKey;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/UnrecoverableEntryException;,
+            Ljava/security/NoSuchAlgorithmException;,
+            Ljava/security/KeyStoreException;
+        }
+    .end annotation
+.end method
+
+.method public abstract getRequestConfirmation()Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/java/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract getRequestConfirmation(Lcom/microsoft/identity/common/java/util/TaskCompletedCallbackWithError;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/microsoft/identity/common/java/util/TaskCompletedCallbackWithError<",
+            "Ljava/lang/String;",
+            "Lcom/microsoft/identity/common/java/exception/ClientException;",
+            ">;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract getSecureHardwareState()Lcom/microsoft/identity/common/java/crypto/SecureHardwareState;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/java/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract mintSignedAccessToken(Ljava/lang/String;JLjava/net/URL;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/java/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract mintSignedAccessToken(Ljava/lang/String;JLjava/net/URL;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/java/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract mintSignedHttpRequest(Ljava/lang/String;JLjava/net/URL;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/java/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract sign(Lcom/microsoft/identity/common/java/crypto/SigningAlgorithm;Ljava/lang/String;)Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/java/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract sign(Lcom/microsoft/identity/common/java/crypto/SigningAlgorithm;[B)[B
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/microsoft/identity/common/java/exception/ClientException;
+        }
+    .end annotation
+.end method
+
+.method public abstract verify(Lcom/microsoft/identity/common/java/crypto/SigningAlgorithm;Ljava/lang/String;Ljava/lang/String;)Z
+.end method
+
+.method public abstract verify(Lcom/microsoft/identity/common/java/crypto/SigningAlgorithm;[B[B)Z
+.end method
