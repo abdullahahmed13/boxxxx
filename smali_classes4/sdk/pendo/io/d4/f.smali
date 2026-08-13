@@ -1,0 +1,120 @@
+.class public final Lsdk/pendo/io/d4/f;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static a(Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "It is not allowed to subscribe with a(n) "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, " multiple times. Please create a fresh instance of "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    const-string v0, " and subscribe that to the target source instead."
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static a(Ljava/lang/Class;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "*>;)V"
+        }
+    .end annotation
+
+    .line 2
+    new-instance v0, Lsdk/pendo/io/p3/e;
+
+    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lsdk/pendo/io/d4/f;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Lsdk/pendo/io/p3/e;-><init>(Ljava/lang/String;)V
+
+    invoke-static {v0}, Lsdk/pendo/io/g4/a;->b(Ljava/lang/Throwable;)V
+
+    return-void
+.end method
+
+.method public static a(Ljava/util/concurrent/atomic/AtomicReference;Lsdk/pendo/io/o3/b;Ljava/lang/Class;)Z
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/concurrent/atomic/AtomicReference<",
+            "Lsdk/pendo/io/o3/b;",
+            ">;",
+            "Lsdk/pendo/io/o3/b;",
+            "Ljava/lang/Class<",
+            "*>;)Z"
+        }
+    .end annotation
+
+    .line 3
+    const-string v0, "next is null"
+
+    invoke-static {p1, v0}, Lsdk/pendo/io/s3/b;->a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    const/4 v0, 0x0
+
+    invoke-static {p0, v0, p1}, Landroidx/camera/view/PreviewView$1$$ExternalSyntheticBackportWithForwarding0;->m(Ljava/util/concurrent/atomic/AtomicReference;Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    invoke-interface {p1}, Lsdk/pendo/io/o3/b;->dispose()V
+
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object p0
+
+    sget-object p1, Lsdk/pendo/io/r3/b;->DISPOSED:Lsdk/pendo/io/r3/b;
+
+    if-eq p0, p1, :cond_0
+
+    invoke-static {p2}, Lsdk/pendo/io/d4/f;->a(Ljava/lang/Class;)V
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_1
+    const/4 p0, 0x1
+
+    return p0
+.end method

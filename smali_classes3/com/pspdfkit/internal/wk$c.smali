@@ -1,0 +1,119 @@
+.class public final Lcom/pspdfkit/internal/wk$c;
+.super Lkotlin/coroutines/jvm/internal/ContinuationImpl;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/pspdfkit/internal/wk;->getAnnotations(ILkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
+    c = "com.pspdfkit.internal.instant.annotations.InstantAnnotationProviderImpl"
+    f = "InstantAnnotationProviderImpl.kt"
+    i = {
+        0x0,
+        0x1,
+        0x1,
+        0x1,
+        0x1,
+        0x1
+    }
+    l = {
+        0x49,
+        0x177
+    }
+    m = "getAnnotations"
+    n = {
+        "pageIndex",
+        "annotations",
+        "instantInfos",
+        "$this$withLock_u24default$iv",
+        "pageIndex",
+        "$i$f$withLock"
+    }
+    nl = {
+        0x50,
+        0x178
+    }
+    s = {
+        "I$0",
+        "L$0",
+        "L$1",
+        "L$2",
+        "I$0",
+        "I$1"
+    }
+    v = 0x2
+.end annotation
+
+
+# instance fields
+.field public a:I
+
+.field public b:Ljava/util/List;
+
+.field public c:Ljava/util/ArrayList;
+
+.field public d:Lkotlinx/coroutines/sync/Mutex;
+
+.field public synthetic e:Ljava/lang/Object;
+
+.field public final synthetic f:Lcom/pspdfkit/internal/wk;
+
+.field public g:I
+
+
+# direct methods
+.method public constructor <init>(Lcom/pspdfkit/internal/wk;Lkotlin/coroutines/Continuation;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/pspdfkit/internal/wk;",
+            "Lkotlin/coroutines/Continuation<",
+            "-",
+            "Lcom/pspdfkit/internal/wk$c;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lcom/pspdfkit/internal/wk$c;->f:Lcom/pspdfkit/internal/wk;
+
+    invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/ContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iput-object p1, p0, Lcom/pspdfkit/internal/wk$c;->e:Ljava/lang/Object;
+
+    iget p1, p0, Lcom/pspdfkit/internal/wk$c;->g:I
+
+    const/high16 v0, -0x80000000
+
+    or-int/2addr p1, v0
+
+    iput p1, p0, Lcom/pspdfkit/internal/wk$c;->g:I
+
+    iget-object p1, p0, Lcom/pspdfkit/internal/wk$c;->f:Lcom/pspdfkit/internal/wk;
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, v0, p0}, Lcom/pspdfkit/internal/wk;->getAnnotations(ILkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method

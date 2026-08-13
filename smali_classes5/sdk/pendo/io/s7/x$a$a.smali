@@ -1,0 +1,243 @@
+.class final Lsdk/pendo/io/s7/x$a$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlinx/coroutines/flow/FlowCollector;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lsdk/pendo/io/s7/x$a;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lkotlinx/coroutines/flow/FlowCollector;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0004\u0010\u0000\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u00022\u0006\u0010\u0003\u001a\u0002H\u0002H\u008a@\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
+    }
+    d2 = {
+        "<anonymous>",
+        "",
+        "T",
+        "value",
+        "emit",
+        "(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lkotlin/jvm/internal/Ref$ObjectRef;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/internal/Ref$ObjectRef<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic b:Lkotlin/jvm/internal/Ref$ObjectRef;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/internal/Ref$ObjectRef<",
+            "Lkotlinx/coroutines/Job;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic c:Lkotlinx/coroutines/channels/ProducerScope;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlinx/coroutines/channels/ProducerScope<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic d:Lkotlin/jvm/internal/Ref$ObjectRef;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/internal/Ref$ObjectRef<",
+            "Lkotlinx/coroutines/Job;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic e:J
+
+.field final synthetic f:J
+
+
+# direct methods
+.method constructor <init>(Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlinx/coroutines/channels/ProducerScope;Lkotlin/jvm/internal/Ref$ObjectRef;JJ)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/internal/Ref$ObjectRef<",
+            "TT;>;",
+            "Lkotlin/jvm/internal/Ref$ObjectRef<",
+            "Lkotlinx/coroutines/Job;",
+            ">;",
+            "Lkotlinx/coroutines/channels/ProducerScope<",
+            "-TT;>;",
+            "Lkotlin/jvm/internal/Ref$ObjectRef<",
+            "Lkotlinx/coroutines/Job;",
+            ">;JJ)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lsdk/pendo/io/s7/x$a$a;->a:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iput-object p2, p0, Lsdk/pendo/io/s7/x$a$a;->b:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iput-object p3, p0, Lsdk/pendo/io/s7/x$a$a;->c:Lkotlinx/coroutines/channels/ProducerScope;
+
+    iput-object p4, p0, Lsdk/pendo/io/s7/x$a$a;->d:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iput-wide p5, p0, Lsdk/pendo/io/s7/x$a$a;->e:J
+
+    iput-wide p7, p0, Lsdk/pendo/io/s7/x$a$a;->f:J
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lkotlin/coroutines/Continuation<",
+            "-",
+            "Lkotlin/Unit;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    iget-object p2, p0, Lsdk/pendo/io/s7/x$a$a;->a:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iput-object p1, p2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    iget-object p1, p0, Lsdk/pendo/io/s7/x$a$a;->b:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iget-object p1, p1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    check-cast p1, Lkotlinx/coroutines/Job;
+
+    if-eqz p1, :cond_0
+
+    const/4 p2, 0x1
+
+    const/4 v0, 0x0
+
+    invoke-static {p1, v0, p2, v0}, Lkotlinx/coroutines/Job$DefaultImpls;->cancel$default(Lkotlinx/coroutines/Job;Ljava/util/concurrent/CancellationException;ILjava/lang/Object;)V
+
+    :cond_0
+    iget-object p1, p0, Lsdk/pendo/io/s7/x$a$a;->b:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iget-object v0, p0, Lsdk/pendo/io/s7/x$a$a;->c:Lkotlinx/coroutines/channels/ProducerScope;
+
+    new-instance v1, Lsdk/pendo/io/s7/x$a$a$a;
+
+    iget-wide v2, p0, Lsdk/pendo/io/s7/x$a$a;->e:J
+
+    iget-object v4, p0, Lsdk/pendo/io/s7/x$a$a;->d:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iget-object v5, p0, Lsdk/pendo/io/s7/x$a$a;->a:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iget-object v6, p0, Lsdk/pendo/io/s7/x$a$a;->c:Lkotlinx/coroutines/channels/ProducerScope;
+
+    const/4 v7, 0x0
+
+    invoke-direct/range {v1 .. v7}, Lsdk/pendo/io/s7/x$a$a$a;-><init>(JLkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlinx/coroutines/channels/ProducerScope;Lkotlin/coroutines/Continuation;)V
+
+    const/4 v4, 0x3
+
+    const/4 v5, 0x0
+
+    move-object v3, v1
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    invoke-static/range {v0 .. v5}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+
+    move-result-object p2
+
+    iput-object p2, p1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    iget-object p1, p0, Lsdk/pendo/io/s7/x$a$a;->d:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iget-object p2, p1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    if-nez p2, :cond_1
+
+    iget-object v0, p0, Lsdk/pendo/io/s7/x$a$a;->c:Lkotlinx/coroutines/channels/ProducerScope;
+
+    new-instance v1, Lsdk/pendo/io/s7/x$a$a$b;
+
+    iget-wide v2, p0, Lsdk/pendo/io/s7/x$a$a;->f:J
+
+    iget-object v4, p0, Lsdk/pendo/io/s7/x$a$a;->b:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iget-object v5, p0, Lsdk/pendo/io/s7/x$a$a;->d:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iget-object v6, p0, Lsdk/pendo/io/s7/x$a$a;->a:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iget-object v7, p0, Lsdk/pendo/io/s7/x$a$a;->c:Lkotlinx/coroutines/channels/ProducerScope;
+
+    const/4 v8, 0x0
+
+    invoke-direct/range {v1 .. v8}, Lsdk/pendo/io/s7/x$a$a$b;-><init>(JLkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlinx/coroutines/channels/ProducerScope;Lkotlin/coroutines/Continuation;)V
+
+    const/4 v4, 0x3
+
+    const/4 v5, 0x0
+
+    move-object v3, v1
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    invoke-static/range {v0 .. v5}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+
+    move-result-object p0
+
+    iput-object p0, p1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    :cond_1
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method

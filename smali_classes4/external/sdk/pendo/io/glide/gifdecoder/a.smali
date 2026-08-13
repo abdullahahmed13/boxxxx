@@ -1,0 +1,46 @@
+.class public interface abstract Lexternal/sdk/pendo/io/glide/gifdecoder/a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lexternal/sdk/pendo/io/glide/gifdecoder/a$a;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract advance()V
+.end method
+
+.method public abstract clear()V
+.end method
+
+.method public abstract getByteSize()I
+.end method
+
+.method public abstract getCurrentFrameIndex()I
+.end method
+
+.method public abstract getData()Ljava/nio/ByteBuffer;
+.end method
+
+.method public abstract getFrameCount()I
+.end method
+
+.method public abstract getNextDelay()I
+.end method
+
+.method public abstract getNextFrame()Landroid/graphics/Bitmap;
+.end method
+
+.method public abstract getTotalIterationCount()I
+.end method
+
+.method public abstract resetFrameIndex()V
+.end method
+
+.method public abstract setDefaultBitmapConfig(Landroid/graphics/Bitmap$Config;)V
+.end method

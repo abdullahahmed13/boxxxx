@@ -1,0 +1,62 @@
+.class Lsdk/pendo/io/c5/c$a$e;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lsdk/pendo/io/c5/c$a;->a(Lsdk/pendo/io/e2/h0;Ljava/lang/Throwable;Lsdk/pendo/io/e2/d0;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Ljava/lang/Throwable;
+
+.field final synthetic b:Lsdk/pendo/io/c5/c$a;
+
+
+# direct methods
+.method constructor <init>(Lsdk/pendo/io/c5/c$a;Ljava/lang/Throwable;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lsdk/pendo/io/c5/c$a$e;->b:Lsdk/pendo/io/c5/c$a;
+
+    iput-object p2, p0, Lsdk/pendo/io/c5/c$a$e;->a:Ljava/lang/Throwable;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 2
+
+    iget-object v0, p0, Lsdk/pendo/io/c5/c$a$e;->b:Lsdk/pendo/io/c5/c$a;
+
+    iget-object v0, v0, Lsdk/pendo/io/c5/c$a;->a:Lsdk/pendo/io/c5/c;
+
+    iget-object p0, p0, Lsdk/pendo/io/c5/c$a$e;->a:Ljava/lang/Throwable;
+
+    check-cast p0, Ljava/lang/Exception;
+
+    const-string v1, "websocket error"
+
+    invoke-static {v0, v1, p0}, Lsdk/pendo/io/c5/c;->a(Lsdk/pendo/io/c5/c;Ljava/lang/String;Ljava/lang/Exception;)Lsdk/pendo/io/b5/d;
+
+    return-void
+.end method

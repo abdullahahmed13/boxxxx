@@ -1,0 +1,19 @@
+.class public interface abstract Lsdk/pendo/io/views/custom/PendoFloatingVisualGuideView$OnFloatingGuideListener;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lsdk/pendo/io/views/custom/PendoFloatingVisualGuideView;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "OnFloatingGuideListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onShowFailed(Lsdk/pendo/io/views/custom/PendoFloatingVisualGuideView;)V
+.end method

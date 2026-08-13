@@ -1,0 +1,217 @@
+.class Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer$1;
+.super Ljava/lang/Object;
+.source "DigestingEntityProducer.java"
+
+# interfaces
+.implements Lorg/apache/hc/core5/http/nio/DataStreamChannel;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;->produce(Lorg/apache/hc/core5/http/nio/DataStreamChannel;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;
+
+.field final synthetic val$channel:Lorg/apache/hc/core5/http/nio/DataStreamChannel;
+
+
+# direct methods
+.method constructor <init>(Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;Lorg/apache/hc/core5/http/nio/DataStreamChannel;)V
+    .locals 0
+
+    .line 113
+    iput-object p1, p0, Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer$1;->this$0:Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;
+
+    iput-object p2, p0, Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer$1;->val$channel:Lorg/apache/hc/core5/http/nio/DataStreamChannel;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public endStream()V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    .line 145
+    invoke-virtual {p0, v0}, Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer$1;->endStream(Ljava/util/List;)V
+
+    return-void
+.end method
+
+.method public endStream(Ljava/util/List;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "+",
+            "Lorg/apache/hc/core5/http/Header;",
+            ">;)V"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 133
+    iget-object v0, p0, Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer$1;->this$0:Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;
+
+    invoke-static {v0}, Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;->access$000(Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;)Ljava/security/MessageDigest;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/security/MessageDigest;->digest()[B
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;->access$102(Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;[B)[B
+
+    .line 134
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    if-eqz p1, :cond_0
+
+    .line 136
+    invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    .line 138
+    :cond_0
+    new-instance p1, Lorg/apache/hc/core5/http/message/BasicHeader;
+
+    iget-object v1, p0, Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer$1;->this$0:Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;
+
+    invoke-static {v1}, Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;->access$000(Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;)Ljava/security/MessageDigest;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/security/MessageDigest;->getAlgorithm()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "digest-algo"
+
+    invoke-direct {p1, v2, v1}, Lorg/apache/hc/core5/http/message/BasicHeader;-><init>(Ljava/lang/String;Ljava/lang/Object;)V
+
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 139
+    new-instance p1, Lorg/apache/hc/core5/http/message/BasicHeader;
+
+    iget-object v1, p0, Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer$1;->this$0:Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;
+
+    invoke-static {v1}, Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;->access$100(Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;)[B
+
+    move-result-object v1
+
+    invoke-static {v1}, Lorg/apache/hc/core5/util/TextUtils;->toHexString([B)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "digest"
+
+    invoke-direct {p1, v2, v1}, Lorg/apache/hc/core5/http/message/BasicHeader;-><init>(Ljava/lang/String;Ljava/lang/Object;)V
+
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 140
+    iget-object p0, p0, Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer$1;->val$channel:Lorg/apache/hc/core5/http/nio/DataStreamChannel;
+
+    invoke-interface {p0, v0}, Lorg/apache/hc/core5/http/nio/DataStreamChannel;->endStream(Ljava/util/List;)V
+
+    return-void
+.end method
+
+.method public requestOutput()V
+    .locals 0
+
+    .line 117
+    iget-object p0, p0, Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer$1;->val$channel:Lorg/apache/hc/core5/http/nio/DataStreamChannel;
+
+    invoke-interface {p0}, Lorg/apache/hc/core5/http/nio/DataStreamChannel;->requestOutput()V
+
+    return-void
+.end method
+
+.method public bridge synthetic write(Ljava/nio/Buffer;)I
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 113
+    check-cast p1, Ljava/nio/ByteBuffer;
+
+    invoke-virtual {p0, p1}, Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer$1;->write(Ljava/nio/ByteBuffer;)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public write(Ljava/nio/ByteBuffer;)I
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 122
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->duplicate()Ljava/nio/ByteBuffer;
+
+    move-result-object v0
+
+    .line 123
+    iget-object v1, p0, Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer$1;->val$channel:Lorg/apache/hc/core5/http/nio/DataStreamChannel;
+
+    invoke-interface {v1, p1}, Lorg/apache/hc/core5/http/nio/DataStreamChannel;->write(Ljava/nio/ByteBuffer;)I
+
+    move-result p1
+
+    if-lez p1, :cond_0
+
+    .line 125
+    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->position()I
+
+    move-result v1
+
+    add-int/2addr v1, p1
+
+    invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
+
+    .line 126
+    iget-object p0, p0, Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer$1;->this$0:Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;
+
+    invoke-static {p0}, Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;->access$000(Lorg/apache/hc/core5/http/nio/entity/DigestingEntityProducer;)Ljava/security/MessageDigest;
+
+    move-result-object p0
+
+    invoke-virtual {p0, v0}, Ljava/security/MessageDigest;->update(Ljava/nio/ByteBuffer;)V
+
+    :cond_0
+    return p1
+.end method

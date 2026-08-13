@@ -1,0 +1,36 @@
+.class public final Lcom/pspdfkit/internal/z1$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/pspdfkit/internal/z1;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x11
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lcom/pspdfkit/internal/z1;
+
+
+# direct methods
+.method public constructor <init>(Lcom/pspdfkit/internal/z1;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lcom/pspdfkit/internal/z1$a;->a:Lcom/pspdfkit/internal/z1;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

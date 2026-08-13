@@ -1,0 +1,59 @@
+.class public abstract Lcom/pspdfkit/internal/jni/NativeReflowConfiguration;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/pspdfkit/internal/jni/NativeReflowConfiguration$CppProxy;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static create(Lcom/pspdfkit/internal/jni/NativeDocument;)Lcom/pspdfkit/internal/jni/NativeReflowConfiguration;
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lcom/pspdfkit/internal/jni/NativeReflowConfiguration$CppProxy;->create(Lcom/pspdfkit/internal/jni/NativeDocument;)Lcom/pspdfkit/internal/jni/NativeReflowConfiguration;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public abstract disableRemoveHeadersFooters()V
+.end method
+
+.method public abstract enableRemoveHeadersFooters(I)V
+.end method
+
+.method public abstract getDocument()Lcom/pspdfkit/internal/jni/NativeDocument;
+.end method
+
+.method public abstract getImagesPath()Ljava/lang/String;
+.end method
+
+.method public abstract getIncludeImages()Z
+.end method
+
+.method public abstract getNumberNeighboringPagesHeadersFooters()Ljava/lang/Integer;
+.end method
+
+.method public abstract setIncludeImages(ZLjava/lang/String;)V
+.end method
+
+.method public abstract shouldRemoveHeadersFooters()Z
+.end method

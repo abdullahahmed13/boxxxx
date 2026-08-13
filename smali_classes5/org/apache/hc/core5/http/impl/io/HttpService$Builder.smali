@@ -1,0 +1,114 @@
+.class public final Lorg/apache/hc/core5/http/impl/io/HttpService$Builder;
+.super Ljava/lang/Object;
+.source "HttpService.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/apache/hc/core5/http/impl/io/HttpService;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Builder"
+.end annotation
+
+
+# instance fields
+.field private connReuseStrategy:Lorg/apache/hc/core5/http/ConnectionReuseStrategy;
+
+.field private http1Config:Lorg/apache/hc/core5/http/config/Http1Config;
+
+.field private processor:Lorg/apache/hc/core5/http/protocol/HttpProcessor;
+
+.field private requestHandler:Lorg/apache/hc/core5/http/io/HttpServerRequestHandler;
+
+.field private streamListener:Lorg/apache/hc/core5/http/impl/Http1StreamListener;
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 337
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lorg/apache/hc/core5/http/impl/io/HttpService$1;)V
+    .locals 0
+
+    .line 329
+    invoke-direct {p0}, Lorg/apache/hc/core5/http/impl/io/HttpService$Builder;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public build()Lorg/apache/hc/core5/http/impl/io/HttpService;
+    .locals 6
+
+    .line 370
+    new-instance v0, Lorg/apache/hc/core5/http/impl/io/HttpService;
+
+    iget-object v1, p0, Lorg/apache/hc/core5/http/impl/io/HttpService$Builder;->processor:Lorg/apache/hc/core5/http/protocol/HttpProcessor;
+
+    iget-object v2, p0, Lorg/apache/hc/core5/http/impl/io/HttpService$Builder;->requestHandler:Lorg/apache/hc/core5/http/io/HttpServerRequestHandler;
+
+    iget-object v3, p0, Lorg/apache/hc/core5/http/impl/io/HttpService$Builder;->http1Config:Lorg/apache/hc/core5/http/config/Http1Config;
+
+    iget-object v4, p0, Lorg/apache/hc/core5/http/impl/io/HttpService$Builder;->connReuseStrategy:Lorg/apache/hc/core5/http/ConnectionReuseStrategy;
+
+    iget-object v5, p0, Lorg/apache/hc/core5/http/impl/io/HttpService$Builder;->streamListener:Lorg/apache/hc/core5/http/impl/Http1StreamListener;
+
+    invoke-direct/range {v0 .. v5}, Lorg/apache/hc/core5/http/impl/io/HttpService;-><init>(Lorg/apache/hc/core5/http/protocol/HttpProcessor;Lorg/apache/hc/core5/http/io/HttpServerRequestHandler;Lorg/apache/hc/core5/http/config/Http1Config;Lorg/apache/hc/core5/http/ConnectionReuseStrategy;Lorg/apache/hc/core5/http/impl/Http1StreamListener;)V
+
+    return-object v0
+.end method
+
+.method public withConnectionReuseStrategy(Lorg/apache/hc/core5/http/ConnectionReuseStrategy;)Lorg/apache/hc/core5/http/impl/io/HttpService$Builder;
+    .locals 0
+
+    .line 355
+    iput-object p1, p0, Lorg/apache/hc/core5/http/impl/io/HttpService$Builder;->connReuseStrategy:Lorg/apache/hc/core5/http/ConnectionReuseStrategy;
+
+    return-object p0
+.end method
+
+.method public withHttp1Config(Lorg/apache/hc/core5/http/config/Http1Config;)Lorg/apache/hc/core5/http/impl/io/HttpService$Builder;
+    .locals 0
+
+    .line 350
+    iput-object p1, p0, Lorg/apache/hc/core5/http/impl/io/HttpService$Builder;->http1Config:Lorg/apache/hc/core5/http/config/Http1Config;
+
+    return-object p0
+.end method
+
+.method public withHttp1StreamListener(Lorg/apache/hc/core5/http/impl/Http1StreamListener;)Lorg/apache/hc/core5/http/impl/io/HttpService$Builder;
+    .locals 0
+
+    .line 360
+    iput-object p1, p0, Lorg/apache/hc/core5/http/impl/io/HttpService$Builder;->streamListener:Lorg/apache/hc/core5/http/impl/Http1StreamListener;
+
+    return-object p0
+.end method
+
+.method public withHttpProcessor(Lorg/apache/hc/core5/http/protocol/HttpProcessor;)Lorg/apache/hc/core5/http/impl/io/HttpService$Builder;
+    .locals 0
+
+    .line 340
+    iput-object p1, p0, Lorg/apache/hc/core5/http/impl/io/HttpService$Builder;->processor:Lorg/apache/hc/core5/http/protocol/HttpProcessor;
+
+    return-object p0
+.end method
+
+.method public withHttpServerRequestHandler(Lorg/apache/hc/core5/http/io/HttpServerRequestHandler;)Lorg/apache/hc/core5/http/impl/io/HttpService$Builder;
+    .locals 0
+
+    .line 345
+    iput-object p1, p0, Lorg/apache/hc/core5/http/impl/io/HttpService$Builder;->requestHandler:Lorg/apache/hc/core5/http/io/HttpServerRequestHandler;
+
+    return-object p0
+.end method

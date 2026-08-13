@@ -1,0 +1,60 @@
+.class public Lexternal/sdk/pendo/io/glide/request/transition/DrawableCrossFadeFactory$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lexternal/sdk/pendo/io/glide/request/transition/DrawableCrossFadeFactory;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field private final a:I
+
+.field private b:Z
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    const/16 v0, 0x12c
+
+    .line 1
+    invoke-direct {p0, v0}, Lexternal/sdk/pendo/io/glide/request/transition/DrawableCrossFadeFactory$a;-><init>(I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(I)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput p1, p0, Lexternal/sdk/pendo/io/glide/request/transition/DrawableCrossFadeFactory$a;->a:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Lexternal/sdk/pendo/io/glide/request/transition/DrawableCrossFadeFactory;
+    .locals 2
+
+    new-instance v0, Lexternal/sdk/pendo/io/glide/request/transition/DrawableCrossFadeFactory;
+
+    iget v1, p0, Lexternal/sdk/pendo/io/glide/request/transition/DrawableCrossFadeFactory$a;->a:I
+
+    iget-boolean p0, p0, Lexternal/sdk/pendo/io/glide/request/transition/DrawableCrossFadeFactory$a;->b:Z
+
+    invoke-direct {v0, v1, p0}, Lexternal/sdk/pendo/io/glide/request/transition/DrawableCrossFadeFactory;-><init>(IZ)V
+
+    return-object v0
+.end method

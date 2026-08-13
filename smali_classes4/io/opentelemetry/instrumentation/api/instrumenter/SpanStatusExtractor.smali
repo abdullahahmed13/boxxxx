@@ -1,0 +1,63 @@
+.class public interface abstract Lio/opentelemetry/instrumentation/api/instrumenter/SpanStatusExtractor;
+.super Ljava/lang/Object;
+.source "SpanStatusExtractor.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<REQUEST:",
+        "Ljava/lang/Object;",
+        "RESPONSE:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+.annotation runtime Ljava/lang/FunctionalInterface;
+.end annotation
+
+
+# direct methods
+.method public static getDefault()Lio/opentelemetry/instrumentation/api/instrumenter/SpanStatusExtractor;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<REQUEST:",
+            "Ljava/lang/Object;",
+            "RESPONSE:",
+            "Ljava/lang/Object;",
+            ">()",
+            "Lio/opentelemetry/instrumentation/api/instrumenter/SpanStatusExtractor<",
+            "TREQUEST;TRESPONSE;>;"
+        }
+    .end annotation
+
+    .line 32
+    sget-object v0, Lio/opentelemetry/instrumentation/api/instrumenter/DefaultSpanStatusExtractor;->INSTANCE:Lio/opentelemetry/instrumentation/api/instrumenter/SpanStatusExtractor;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public abstract extract(Lio/opentelemetry/instrumentation/api/instrumenter/SpanStatusBuilder;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Throwable;)V
+    .param p3    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p4    # Ljava/lang/Throwable;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lio/opentelemetry/instrumentation/api/instrumenter/SpanStatusBuilder;",
+            "TREQUEST;TRESPONSE;",
+            "Ljava/lang/Throwable;",
+            ")V"
+        }
+    .end annotation
+.end method

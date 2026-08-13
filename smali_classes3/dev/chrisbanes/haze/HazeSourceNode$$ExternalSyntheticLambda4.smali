@@ -1,0 +1,44 @@
+.class public final synthetic Ldev/chrisbanes/haze/HazeSourceNode$$ExternalSyntheticLambda4;
+.super Ljava/lang/Object;
+.source "D8$$SyntheticClass"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# instance fields
+.field public final synthetic f$0:Ljava/lang/String;
+
+.field public final synthetic f$1:Ldev/chrisbanes/haze/HazeSourceNode;
+
+
+# direct methods
+.method public synthetic constructor <init>(Ljava/lang/String;Ldev/chrisbanes/haze/HazeSourceNode;)V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ldev/chrisbanes/haze/HazeSourceNode$$ExternalSyntheticLambda4;->f$0:Ljava/lang/String;
+
+    iput-object p2, p0, Ldev/chrisbanes/haze/HazeSourceNode$$ExternalSyntheticLambda4;->f$1:Ldev/chrisbanes/haze/HazeSourceNode;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 0
+    iget-object v0, p0, Ldev/chrisbanes/haze/HazeSourceNode$$ExternalSyntheticLambda4;->f$0:Ljava/lang/String;
+
+    iget-object p0, p0, Ldev/chrisbanes/haze/HazeSourceNode$$ExternalSyntheticLambda4;->f$1:Ldev/chrisbanes/haze/HazeSourceNode;
+
+    invoke-static {v0, p0}, Ldev/chrisbanes/haze/HazeSourceNode;->$r8$lambda$j3JRE8mJoQd5pfdzpYXw_L66Mz4(Ljava/lang/String;Ldev/chrisbanes/haze/HazeSourceNode;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method

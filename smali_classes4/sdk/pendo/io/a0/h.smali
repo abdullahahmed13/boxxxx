@@ -1,0 +1,28 @@
+.class public interface abstract Lsdk/pendo/io/a0/h;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract deserialize(Lsdk/pendo/io/a0/i;Ljava/lang/reflect/Type;Lsdk/pendo/io/a0/g;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lsdk/pendo/io/a0/i;",
+            "Ljava/lang/reflect/Type;",
+            "Lsdk/pendo/io/a0/g;",
+            ")TT;"
+        }
+    .end annotation
+.end method

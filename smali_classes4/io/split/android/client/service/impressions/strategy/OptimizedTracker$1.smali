@@ -1,0 +1,101 @@
+.class Lio/split/android/client/service/impressions/strategy/OptimizedTracker$1;
+.super Ljava/lang/Object;
+.source "OptimizedTracker.java"
+
+# interfaces
+.implements Lio/split/android/client/service/executor/SplitTaskExecutionListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/split/android/client/service/impressions/strategy/OptimizedTracker;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lio/split/android/client/service/impressions/strategy/OptimizedTracker;
+
+
+# direct methods
+.method constructor <init>(Lio/split/android/client/service/impressions/strategy/OptimizedTracker;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
+
+    .line 35
+    iput-object p1, p0, Lio/split/android/client/service/impressions/strategy/OptimizedTracker$1;->this$0:Lio/split/android/client/service/impressions/strategy/OptimizedTracker;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public taskExecuted(Lio/split/android/client/service/executor/SplitTaskExecutionInfo;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "taskInfo"
+        }
+    .end annotation
+
+    .line 39
+    invoke-virtual {p1}, Lio/split/android/client/service/executor/SplitTaskExecutionInfo;->getStatus()Lio/split/android/client/service/executor/SplitTaskExecutionStatus;
+
+    move-result-object v0
+
+    sget-object v1, Lio/split/android/client/service/executor/SplitTaskExecutionStatus;->ERROR:Lio/split/android/client/service/executor/SplitTaskExecutionStatus;
+
+    if-ne v0, v1, :cond_0
+
+    .line 40
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    const-string v1, "DO_NOT_RETRY"
+
+    invoke-virtual {p1, v1}, Lio/split/android/client/service/executor/SplitTaskExecutionInfo;->getBoolValue(Ljava/lang/String;)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Ljava/lang/Boolean;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 41
+    iget-object p1, p0, Lio/split/android/client/service/impressions/strategy/OptimizedTracker$1;->this$0:Lio/split/android/client/service/impressions/strategy/OptimizedTracker;
+
+    invoke-static {p1}, Lio/split/android/client/service/impressions/strategy/OptimizedTracker;->access$000(Lio/split/android/client/service/impressions/strategy/OptimizedTracker;)Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    move-result-object p1
+
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+
+    .line 42
+    iget-object p0, p0, Lio/split/android/client/service/impressions/strategy/OptimizedTracker$1;->this$0:Lio/split/android/client/service/impressions/strategy/OptimizedTracker;
+
+    invoke-virtual {p0}, Lio/split/android/client/service/impressions/strategy/OptimizedTracker;->stopPeriodicRecording()V
+
+    :cond_0
+    return-void
+.end method

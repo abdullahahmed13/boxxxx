@@ -1,0 +1,36 @@
+.class Lio/split/android/client/service/sseclient/SseJwtParser$2;
+.super Lcom/google/gson/reflect/TypeToken;
+.source "SseJwtParser.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/split/android/client/service/sseclient/SseJwtParser;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/gson/reflect/TypeToken<",
+        "Ljava/util/Map<",
+        "Ljava/lang/String;",
+        "Ljava/util/List<",
+        "Ljava/lang/String;",
+        ">;>;>;"
+    }
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .line 25
+    invoke-direct {p0}, Lcom/google/gson/reflect/TypeToken;-><init>()V
+
+    return-void
+.end method
